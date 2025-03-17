@@ -31,7 +31,11 @@ const Checkstatus = () => {
       setIsLoading(false);
       return;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 3962ae1 (Initial commit)
     // ถ้าข้อมูลถูกต้อง ค่อยเริ่มโหลด
     setIsLoading(true);
     setError("");
@@ -39,13 +43,20 @@ const Checkstatus = () => {
 
     try {
       const response = await fetch(
+<<<<<<< HEAD
         `https://odos.thaigov.go.th:3000/api/searchV?searchId=${searchId}&verifyCode=${verifyCode}` // Main Server 
         // `/api/searchV?searchId=${searchId}&verifyCode=${verifyCode}` // Myserver
+=======
+        `https://odos.thaigov.go.th:3000/api/searchV?searchId=${searchId}&verifyCode=${verifyCode}`
+>>>>>>> 3962ae1 (Initial commit)
       );
 
       if (!response.ok) {
         throw new Error("ไม่พบข้อมูล หรือเกิดข้อผิดพลาด");
+<<<<<<< HEAD
         
+=======
+>>>>>>> 3962ae1 (Initial commit)
       }
 
       const data = await response.json();
@@ -68,7 +79,11 @@ const Checkstatus = () => {
       <Navbar hideLanguageTranslator={false} />
       <div className="container mx-auto py-8 px-4 text-[#003366] mb-4 font-sukhumvit">
         <h2 className="font-serif text-2xl font-sukhumvit">
+<<<<<<< HEAD
           ระบบตรวจสอบสถานะการพิจารณาโครงการ ODOS
+=======
+          ระบบตรวจสอบสถานะการพิจารณาโครงการหนึ่งอำเภอหนึ่งทุน
+>>>>>>> 3962ae1 (Initial commit)
         </h2>
         <SearchForm
           searchId={searchId}
@@ -79,7 +94,13 @@ const Checkstatus = () => {
           isLoading={isLoading}
         />
         {error && <p className="mt-4 text-red-600 font-sukhumvit">{error}</p>}
+<<<<<<< HEAD
         {isLoading && <p className="mt-4 text-gray-600 font-sukhumvit">กำลังโหลด...</p>}
+=======
+        {isLoading && (
+          <p className="mt-4 text-gray-600 font-sukhumvit">กำลังโหลด...</p>
+        )}
+>>>>>>> 3962ae1 (Initial commit)
         {hasSearched && !isLoading && result && (
           <>
             <ProgressSteps status={result.Status || "รอการพิจารณา"} />
@@ -87,11 +108,21 @@ const Checkstatus = () => {
           </>
         )}
         {hasSearched && !isLoading && !result && (
+<<<<<<< HEAD
           <p className="mt-4 text-gray-600 font-sukhumvit">ไม่พบข้อมูลที่ตรงกัน</p>
+=======
+          <p className="mt-4 text-gray-600 font-sukhumvit">
+            ไม่พบข้อมูลที่ตรงกัน
+          </p>
+>>>>>>> 3962ae1 (Initial commit)
         )}
       </div>
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default Checkstatus;
+=======
+export default Checkstatus;
+>>>>>>> 3962ae1 (Initial commit)

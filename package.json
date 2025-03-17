@@ -18,7 +18,11 @@
     "react-dom": "^18.3.1",
     "react-google-multi-lang": "^1.0.7",
     "react-hot-toast": "^2.5.1",
+<<<<<<< HEAD
     "react-router-dom": "^7.1.1",
+=======
+    "react-router-dom": "^7.3.0",
+>>>>>>> 3962ae1 (Initial commit)
     "react-turnstile": "^1.1.4"
   },
   "devDependencies": {

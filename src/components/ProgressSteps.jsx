@@ -2,17 +2,27 @@ import React from "react";
 
 const ProgressSteps = ({ status }) => {
     const steps = [
+<<<<<<< HEAD
         "ยื่นสมัครแล้ว",
         "ผ่านการคัดเลือก\nรอบที่ 1",
         "สอบทักษะ\nภาษาอังกฤษ และ\nและดิจิทัลพื้นฐาน",
         "ผ่านการคัดเลือก\nรอบที่  2",
         "สอบทักษะด้าน\nดิจิทัลระดับกลาง",
         "ผ่านการคัดเลือก\nรอบที่  3",
+=======
+        "ได้รับเอกสารแล้ว",
+        "ผ่านการคัดเลือก\nครั้งที่ 1",
+        "สอบทักษะภาษาอังกฤษ",
+        "ผ่านการคัดเลือก\nครั้งที่ 2",
+        "สอบทักษะด้าน\nดิจิทัลระดับกลาง",
+        "ผ่านการคัดเลือก\nครั้งที่ 3",
+>>>>>>> 3962ae1 (Initial commit)
         "สอบสัมภาษณ์",
         status === "ไม่ผ่าน" ? "ไม่ผ่าน" : "ผ่านสอบสัมภาษณ์",
     ];
 
     const dates = [
+<<<<<<< HEAD
         "24 มี.ค - 16 พ.ค. 68",
         "16 มิ.ย. 68",
         "17 - 30 มิ.ย. 68",
@@ -29,6 +39,20 @@ const ProgressSteps = ({ status }) => {
 
     const statusMap = {
         "รอการพิจารณา": 0,
+=======
+        "31 มีนาคม -\n30 เมษายน 68",
+        "1 มิถุนายน 68",
+        "2 มิถุนายน -\n15 มิถุนายน 68",
+        "16 มิถุนายน 68",
+        "15 มิถุนายน -\n24 มิถุนายน 68",
+        "25 มิถุนายน 68",
+        "1 กรกฎาคม -\n30 กรกฎาคม 68",
+        "1 สิงหาคม 68",
+    ];
+
+    const statusMap = {
+        "ยื่นสมัครแล้ว": 0,
+>>>>>>> 3962ae1 (Initial commit)
         "ผ่านการคัดเลือกครั้งที่ 1": 1,
         "สอบทักษะภาษาอังกฤษ": 2,
         "ผ่านการคัดเลือกครั้งที่ 2": 3,
@@ -47,10 +71,15 @@ const ProgressSteps = ({ status }) => {
 
     return (
         <div className="relative flex justify-center items-center mt-6 space-x-6 sm:space-x-12 lg:space-x-24 font-sukhumvit">
+<<<<<<< HEAD
         {/* // <div className="relative flex justify-center items-center mt-6 space-x-6 sm:space-x-12 lg:space-x-14 font-sukhumvit">     */}
             {/* แสดงทุกสถานะใน lg ขึ้นไป */}
             {/* <div className="hidden lg:flex space-x-6 sm:space-x-12 lg:space-x-24"> */}
             <div className="hidden lg:flex space-x-6 sm:space-x-12 lg:space-x-18">
+=======
+            {/* แสดงทุกสถานะใน lg ขึ้นไป */}
+            <div className="hidden lg:flex space-x-6 sm:space-x-12 lg:space-x-24">
+>>>>>>> 3962ae1 (Initial commit)
                 {steps.map((label, index) => renderStep(label, index, currentStep, status, dates, steps))}
             </div>
 
@@ -93,6 +122,7 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
 
     return (
         <div key={index} className="relative flex flex-col items-center min-h-[120px]">
+<<<<<<< HEAD
         {/* // <div key={index} className="relative flex flex-col items-center min-h-[70px] gap-4"> */}
 
 
@@ -102,12 +132,20 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
                 {/* <span className={`text-xs sm:text-sm lg:text-lg ${isActive ? "text-white" : "text-gray-700"} font-sukhumvit`}> */}
                 <span className={`text-[10px] sm:text-[12px] lg:text-[14px] ${isActive ? "text-white" : "text-gray-700"} font-sukhumvit`}>
 
+=======
+            <div className={`w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full border-4 flex items-center justify-center ${circleColor}`}>
+                <span className={`text-xs sm:text-sm lg:text-lg ${isActive ? "text-white" : "text-gray-700"} font-sukhumvit`}>
+>>>>>>> 3962ae1 (Initial commit)
                     {index + 1}
                 </span>
             </div>
 
+<<<<<<< HEAD
             {/* <div className="text-gray-900 text-center w-full font-sukhumvit whitespace-nowrap" style={{ fontSize: "clamp(10px, 2vw, 16px)", top: "65px" }}> */}
             <div className="text-gray-900 text-center w-full font-sukhumvit whitespace-nowrap" style={{ fontSize: "clamp(8px, 1.5vw, 12px)", top: "65px" }}>
+=======
+            <div className="text-gray-900 text-center w-full font-sukhumvit whitespace-nowrap" style={{ fontSize: "clamp(10px, 2vw, 16px)", top: "65px" }}>
+>>>>>>> 3962ae1 (Initial commit)
                 {label.split("\n").map((line, i) => (
                     <React.Fragment key={i}>
                         {line}
@@ -120,7 +158,11 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
                 className={`absolute text-gray-600 text-center w-full min-h-[10px] 
                     ${dates[index] ? "" : "opacity-0"} 
                     mt-2 sm:mt-2 md:mt-6 
+<<<<<<< HEAD
                     text-[7px] sm:text-[8px] md:text-[12.5px] lg:text-[12px] 
+=======
+                    text-[7px] sm:text-[8px] md:text-[12.5px] lg:text-[14px] 
+>>>>>>> 3962ae1 (Initial commit)
                     top-[60px] sm:top-[90px]`}
             >
                 {dates[index] && dates[index].includes("\n") ? (
@@ -133,11 +175,19 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
             {showLine && index < steps.length - 1 && (
                 <div
                     className={`h-2 ${lineColor} 
+<<<<<<< HEAD
                         w-[70px] sm:w-[40px] md:w-[110px] lg:w-[100px] 
                         ml-0 
                         -mr-[50px] sm:-mr-[60px] md:-mr-[120px] lg:-mr-[120px] 
                         absolute -z-10 
                         top-4 sm:top-3 md:top-5 lg:top-6
+=======
+                        w-[80px] sm:w-[60px] md:w-[150px] lg:w-[190px] 
+                        ml-0 
+                        -mr-[90px] sm:-mr-[80px] md:-mr-[150px] lg:-mr-[190px] 
+                        absolute -z-10 
+                        top-5 sm:top-6 md:top-7 lg:top-9
+>>>>>>> 3962ae1 (Initial commit)
                         translate-y-[-30%] sm:translate-y-[-40%] md:translate-y-[-55%] lg:translate-y-[-60%]`}
                 ></div>
             )}
@@ -146,6 +196,7 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
     );
 };
 
+<<<<<<< HEAD
 export default ProgressSteps;
 
 // className={`absolute text-gray-600 text-center w-full min-h-[10px] 
@@ -157,3 +208,6 @@ export default ProgressSteps;
 // w-[80px] sm:w-[60px] md:w-[150px] lg:w-[190px] 
 // ml-0 
 // -mr-[90px] sm:-mr-[80px] md:-mr-[150px] lg:-mr-[190px] 
+=======
+export default ProgressSteps;
+>>>>>>> 3962ae1 (Initial commit)

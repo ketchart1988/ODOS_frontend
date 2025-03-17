@@ -36,4 +36,8 @@ const SearchForm = ({ searchId, setSearchId, verifyCode, setVerifyCode, handleSe
   </form>
 );
 
+<<<<<<< HEAD
 export default SearchForm;
+=======
+export default SearchForm;
+>>>>>>> 3962ae1 (Initial commit)

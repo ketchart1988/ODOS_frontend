@@ -4,11 +4,16 @@ const Captcha = ({ children }) => {
   const [captchaValid, setCaptchaValid] = useState(false);
   const [captchaPassed, setCaptchaPassed] = useState(() => {
     const storedValue = localStorage.getItem("captchaPassed");
+<<<<<<< HEAD
     return storedValue === "true"; // รีเซ็ตให้เริ่มต้นเป็น false ทุกครั้ง
+=======
+    return storedValue === "false"; // รีเซ็ตให้เริ่มต้นเป็น false ทุกครั้ง
+>>>>>>> 3962ae1 (Initial commit)
   });
 
   const captchaRendered = useRef(false);
 
+<<<<<<< HEAD
   const loadTurnstileScript = () => {
     return new Promise((resolve, reject) => {
       if (window.turnstile) {
@@ -16,10 +21,19 @@ const Captcha = ({ children }) => {
         return;
       }
 
+=======
+  useEffect(() => {
+    // รีเซ็ตค่าให้ทุกครั้งที่โหลดหน้าใหม่
+    localStorage.setItem("captchaPassed", "true");
+
+    // ตรวจสอบว่า Cloudflare Turnstile โหลดสำเร็จหรือยัง
+    if (!window.turnstile) {
+>>>>>>> 3962ae1 (Initial commit)
       const script = document.createElement("script");
       script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
       script.async = true;
       script.defer = true;
+<<<<<<< HEAD
 
       script.onload = () => resolve();
       script.onerror = () => reject(new Error("Failed to load Turnstile script"));
@@ -35,6 +49,22 @@ const Captcha = ({ children }) => {
       // ลบ DOM เก่า
       while (captchaContainer.firstChild) {
         captchaContainer.removeChild(captchaContainer.firstChild);
+=======
+      script.onload = () => {
+        console.log("Turnstile Loaded");
+      };      
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!captchaPassed && window.turnstile && !captchaRendered.current) {
+      const captchaContainer = document.getElementById("turnstile-container");
+      if (captchaContainer) {
+        while (captchaContainer.firstChild) {
+          captchaContainer.removeChild(captchaContainer.firstChild);
+        }
+>>>>>>> 3962ae1 (Initial commit)
       }
 
       window.turnstile.render("#turnstile-container", {
@@ -42,26 +72,36 @@ const Captcha = ({ children }) => {
         callback: (token) => {
           if (token) {
             setCaptchaValid(true);
+<<<<<<< HEAD
             console.log("CAPTCHA validated with token:", token);
+=======
+>>>>>>> 3962ae1 (Initial commit)
           }
         },
         "error-callback": () => {
           setCaptchaValid(false);
+<<<<<<< HEAD
           console.error("CAPTCHA encountered an error");
+=======
+>>>>>>> 3962ae1 (Initial commit)
         },
         "expired-callback": () => {
           setCaptchaValid(false);
           captchaRendered.current = false;
+<<<<<<< HEAD
           console.log("CAPTCHA expired. Showing alert...");
           alert(
             "เนื่องจาก Token สำหรับยืนยันตัวตนหมดอายุ\nโปรดกด OK เพื่อรีโหลดใหม่"
           );
           renderCaptcha(); // รีโหลด CAPTCHA อัตโนมัติหลังจากแจ้งเตือน
+=======
+>>>>>>> 3962ae1 (Initial commit)
         },
       });
 
       captchaRendered.current = true;
     }
+<<<<<<< HEAD
   };
 
   useEffect(() => {
@@ -81,6 +121,8 @@ const Captcha = ({ children }) => {
       captchaRendered.current = false; // รีเซ็ตสถานะเมื่อผู้ใช้ยังไม่ผ่าน CAPTCHA
       renderCaptcha();
     }
+=======
+>>>>>>> 3962ae1 (Initial commit)
   }, [captchaPassed]);
 
   const handleSubmit = (e) => {
@@ -89,12 +131,19 @@ const Captcha = ({ children }) => {
       setCaptchaPassed(true);
       localStorage.setItem("captchaPassed", "true");
     } else {
+<<<<<<< HEAD
       console.log("CAPTCHA token expired. Showing alert...");
       alert(
         "เนื่องจาก Token สำหรับยืนยันตัวตนหมดอายุ\nโปรดกด OK และกดปุ่ม Refresh อีกครั้งเพื่อรีโหลดใหม่"
       );
       captchaRendered.current = false;
       renderCaptcha(); // รีโหลด CAPTCHA อัตโนมัติหลังจากแจ้งเตือน
+=======
+      alert(
+        "เนื่องจาก Token สำหรับยืนยันตัวตนหมดอายุ\nโปรดกด OK เพื่อรีโหลดใหม่"
+      );
+      captchaRendered.current = false;
+>>>>>>> 3962ae1 (Initial commit)
     }
   };
 
@@ -120,4 +169,8 @@ const Captcha = ({ children }) => {
   return <>{children}</>;
 };
 
+<<<<<<< HEAD
 export default Captcha;
+=======
+export default Captcha;
+>>>>>>> 3962ae1 (Initial commit)
