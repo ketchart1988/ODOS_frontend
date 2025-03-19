@@ -1,0 +1,72 @@
+import React from "react";
+import LanguageTranslator from "./LanguageTranslator";
+import { Link } from "react-router-dom";
+import Maintenance from "../pages/Maintenance";
+import Information from "../pages/Information";
+
+
+function Navbar({ hideLanguageTranslator }) {
+  return (
+    <nav className="sticky top-0 z-50 bg-[#FFF200] transition-colors">
+      {/* <div className="bg-[black] text-[white] text-3xl text-center place-items-center p-12">
+        <p className="text-3xl">
+          WE ARE COMING SOON ON <span className="text-[yellow]">1</span> MARCH
+          2025
+        </p>
+        <p className="text-sm mt-6">This website is under maintenance!</p>
+      </div> */}
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-0">
+        <img
+          src="\images\Logo ODOS and KV_Monochome_Black.png"
+          alt=""
+          style={{ height: 100, width: 100 }}
+          className="hidden md:block"
+        />
+        {/* <span className="self-center text-4xl font-semibold whitespace-nowrap text-[#869bd4]">
+          ODOS
+          <span className="hidden sm:inline text-[white]">
+            {" "}
+            Summer Camp
+          </span>
+        </span> */}
+
+        {/* <div className="flex justify-end place-items-center">
+          <div className="ml-4 text-[white]">
+            {!hideLanguageTranslator && <LanguageTranslator />}
+          </div>
+        </div> */}
+        <div className="flex">
+          <div className="flex gap-6 text-xl pr-8">
+            <Link to="/">Home</Link>
+            <Link to="/Maintenance">About</Link>
+            <Link to="/Information">Information</Link>
+            <Link to="/Maintenance">News</Link>
+          </div>
+          <div className="pr-10">
+            <Link to='/'>EN</Link>
+            <span> | </span>
+            <Link to='/TH'>TH</Link>
+          </div>
+        </div>
+
+
+
+        {/* <ul className="flex">
+          <li>
+            <Link to="/src/pages/TH" className="text-white hover:text-gray-300">
+              TH
+            </Link>
+          </li>
+          <span className="text-white hover:text-gray-300">|</span>
+          <li>
+            <Link to="/app.jsx" className="text-white hover:text-gray-300">
+              EN
+            </Link>
+          </li>
+        </ul> */}
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
