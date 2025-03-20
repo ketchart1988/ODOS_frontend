@@ -12,13 +12,13 @@ function Navbar({ }) {
                     className="hidden md:block"
                 />
                 <div className="flex">
-                    <div className="flex gap-6 text-xl pr-8">
+                    <div className="flex gap-6 text-[12px] pr-4">
                         <Link to="/">Home</Link>
-                        <Link to="/Maintenance">About</Link>
+                        {/* <Link to="/Maintenance">About</Link> */}
                         <Link to="/Information">Information</Link>
                         <Link to="/Maintenance">News</Link>
                     </div>
-                    <div className="pr-10">
+                    <div className="text-[12px] pr-3">
                         <Link to='/Information'>EN</Link>
                         <span> | </span>
                         <Link to='/infoTH'>TH</Link>

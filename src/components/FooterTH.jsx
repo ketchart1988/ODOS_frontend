@@ -6,7 +6,7 @@ function Footer() {
       <img
         src="\images\Logo ODOS and KV_Monochome_White.png"
         alt=""
-        className="w-[250px] h-[100px] sm:w-[200px] sm:h-[200px]"
+        className="sm:w-[250px] sm:h-[250px]"
       />
       <div className="">
         <div className="text-[white] text-sm sm:text-xl ml-8">

@@ -26,7 +26,7 @@ function InfoTH() {
         <div className="id= คุณสมบัติ">
           <div className="h-screen flex flex-col  ">
             <br></br>
-            <h1 className="text-5xl font-bold mb-6 items-center text-center ">คุณสมบัติของผู้สมัครเข้าร่วมโครงการ</h1>
+            <h1 className="text-5xl  font-bold mb-6 items-center text-center ">คุณสมบัติของผู้สมัครเข้าร่วมโครงการ</h1>
             <p className="px-4">ณ วันที่ 24 มีนาคม 2568 ผู้สมัครต้องมีคุณสมบัติ ดังต่อไปนี้</p>
             <ul className="คุณสมบัติ px-6">
               <li><label htmlFor="#">1.1	มีสัญชาติไทย</label></li>

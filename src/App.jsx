@@ -47,7 +47,7 @@ function App() {
         <Timeline />
       </div>
       <div>
-        <img src="/images/Partner.jpg" alt="" />
+        <img src="/images/ODOS Website_EN_Section 7 Partner.jpg" alt="" />
       </div>
       {/* <div>
         <img src="/images/Footer.png " alt="" />

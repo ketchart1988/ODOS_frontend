@@ -17,7 +17,7 @@ function TH() {
                 <img src="/images/ODOS Website_Detail_Section 1.jpg" alt="" />
             </div>
             <div className="flex flex-col justify-center items-center">
-                <img src="/images/openTH.jpg" alt="" />
+                <img src="/images/BFOpenTH.jpg" alt="" />
                 {/* <div className="bg-[url('/images/ODOS Website_EN_BG Section 2.png')] bg-cover w-full"> */}
                 {/* <Region /> */}
                 {/* </div> */}
@@ -32,7 +32,7 @@ function TH() {
                 <TimelineTH />
             </div>
             <div>
-                <img src="/images/ParnerTH.jpg" alt="" />
+                <img src="/images/ODOS Website_TH_20032025_Section 7 Partner.jpg" alt="" />
             </div>
             {/* <div>
                 <img src="/images/FooterTH.jpg" alt="" />
