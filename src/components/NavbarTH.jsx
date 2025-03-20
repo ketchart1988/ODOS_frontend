@@ -27,11 +27,12 @@ function NavbarTH({ hideLanguageTranslator }) {
                 <div className="flex">
                     <div>
                         <ul className="flex gap-6 text-xl pr-8">
+                          <Link to="/">Home</Link>
                             <li>
                                 <a href="/Maintenance">About</a>
                             </li>
                             <li>
-                                <a href="/Information">Information</a>
+                                <a href="/InfoTH">Information</a>
                             </li>
                             <li>
                                 <a href="/Maintenance">News</a>
@@ -40,9 +41,9 @@ function NavbarTH({ hideLanguageTranslator }) {
                         </ul>
                     </div>
                     <div className="pr-10">
-                        <Link to='/'>EN</Link>
+                        <Link to='/EN'>EN</Link>
                         <span> | </span>
-                        <Link to='/TH'>TH</Link>
+                        <Link to='/'>TH</Link>
                     </div>
                 </div>
 

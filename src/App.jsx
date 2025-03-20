@@ -49,12 +49,12 @@ function App() {
       <div>
         <img src="/images/Partner.jpg" alt="" />
       </div>
-      <div>
+      {/* <div>
         <img src="/images/Footer.png " alt="" />
-      </div>
-      {/* <div className="flex flex-col">
-        <Footer />
       </div> */}
+      <div className="flex flex-col">
+        <Footer />
+      </div>
     </div>
   );
 }

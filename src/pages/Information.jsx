@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 // import Navbar from "./components/Navbar";
 import Navbar_info from "../components/Nav_info";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 function InfoEN() {
   return (
@@ -16,13 +17,13 @@ function InfoEN() {
       </div>
       <div>
         <div className="id= qualifications">
-          <div className="h-screen flex flex-col px-6">
+          <div className="h-screen flex flex-col">
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Qualifications for Applicants
             </h1>
-            <p>As of March 24, 2025, applicants must meet the following qualifications:</p>
-            <ul className="qualifications">
+            <p className="px-4">As of March 24, 2025, applicants must meet the following qualifications:</p>
+            <ul className="qualifications px-6">
               <li><label htmlFor="#">1.1 Must be of Thai nationality</label></li>
               <li><label htmlFor="#">1.2 Must be no older than 19 years</label></li>
               <li>
@@ -47,7 +48,7 @@ function InfoEN() {
               </li>
               <li>
                 <label htmlFor="#">
-                  1.7 Must have good behavior, verified by a recommendation letter from the educational institution, advisor, or homeroom teacher. 
+                  1.7 Must have good behavior, verified by a recommendation letter from the educational institution, advisor, or homeroom teacher.
                   Must be in good physical and mental health, free from diseases that hinder education or contagious diseases that interfere with work, and must not be legally incapacitated.
                 </label>
               </li>
@@ -56,7 +57,7 @@ function InfoEN() {
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Required Documents for Applicant Selection
             </h1>
-            <ul className="documents">
+            <ul className="documents px-6">
               <li><label htmlFor="">2.1 A recent front-facing photograph without a hat or glasses, plain background, taken within the last year from the application date.</label></li>
               <li><label htmlFor="">2.2 A copy of the applicant's national ID card and house registration.</label></li>
               <li><label htmlFor="">2.3 A copy of the national ID card and house registration of the parents or legal guardian.</label></li>
@@ -76,7 +77,7 @@ function InfoEN() {
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Selection Criteria
             </h1>
-            <ul className="criteria">
+            {/* <ul className="criteria">
               <li><label htmlFor="">3.1 Evaluation criteria for Round 1:</label></li>
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;1) Cumulative GPA &nbsp;&nbsp;&nbsp;&nbsp;10%</label></li>
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;2) English GPA &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
@@ -93,13 +94,79 @@ function InfoEN() {
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;3) Communication skills &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;4) Analytical thinking &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;5) Personality &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-            </ul>
+            </ul> */}
+
+            <div style={{ width: "80%", margin: "0px", padding: "20px", textAlign: "left" }}>
+              {/* <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "20px" }}>
+        Selection Criteria
+      </h1> */}
+              <ul style={{ listStyleType: "none", padding: "0", width: "100%" }}>
+                <li><label>3.1 Evaluation criteria for Round 1:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) Cumulative GPA</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>10%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>2) English GPA</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>3) Digital experience and achievements</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>30%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>4) Video presentation skills and attitude</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>40%</span>
+                </li>
+
+                <li><label>3.2 Evaluation criteria for Round 2:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) English proficiency test</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>10%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>2) Basic digital skills test</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+
+                <li><label>3.3 Evaluation criteria for Round 3:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) Intermediate digital skills test</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>30%</span>
+                </li>
+
+                <li><label>3.4 Evaluation criteria for final selection:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) Attitude</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>2) Problem-solving ability</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>3) Communication skills</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>4) Analytical thinking</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>5) Personality</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+              </ul>
+            </div>
+
+
+
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Applicant Selection Process
             </h1>
-            <ul className="selection">
-            <li>
+            <ul className="selection px-6">
+              <li>
                 <label htmlFor="">
                   4.1 Applicants must meet all announced qualifications. The committee will review and announce the results of Round 1 based on supporting documents and self-introduction videos.
                 </label>
@@ -144,7 +211,7 @@ function InfoEN() {
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Terms and Conditions for Participants
             </h1>
-            <ul className="terms">
+            <ul className="terms px-6">
               <li><label htmlFor="">5.1 Participants must sign a contract to be part of the youth program throughout its duration.</label></li>
               <li><label htmlFor="">5.2 Participants will receive full financial support to participate in program activities in the designated country/region, covering necessary living expenses.</label></li>
               <li><label htmlFor="">5.3 Participants must comply with all conditions and obligations set by the program.</label></li>
@@ -154,7 +221,7 @@ function InfoEN() {
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Rules for Program Participation
             </h1>
-            <ul className="rules">
+            <ul className="rules px-6">
               <li><label htmlFor="">6.1 Participants must conduct themselves appropriately as representatives of Thailand and uphold the country's reputation.</label></li>
               <li><label htmlFor="">6.2 Participants must refrain from actions or statements that could damage the program, the office, or international relations.</label></li>
               <li><label htmlFor="">6.3 Participants must attend all program activities and follow all rules and regulations of the office and the educational institution.</label></li>
@@ -165,7 +232,7 @@ function InfoEN() {
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Suspension or Termination of Participation
             </h1>
-            <ul className="suspension">
+            <ul className="suspension px-6">
               <li><label htmlFor="">Participants may have their program status suspended or terminated under the following conditions:</label></li>
               <li><label htmlFor="">7.1 Disciplinary action due to violation of educational institution rules or legal infractions.</label></li>
               <li><label htmlFor="">7.2 Inappropriate behavior inconsistent with the values of the program, including failure to adhere to moral and cultural norms before or during the program.</label></li>
@@ -177,6 +244,10 @@ function InfoEN() {
                 <label htmlFor="">The committee has the authority to suspend or terminate program participation and disqualify the participant from future program cycles.</label>
               </li>
             </ul>
+            <br />
+            <div className="flex flex-col">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>

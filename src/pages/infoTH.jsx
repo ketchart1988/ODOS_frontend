@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 // import Navbar from "./components/Navbar";
 import Navbar_info from "../components/Nav_info";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/FooterTH";
 
 
 
@@ -20,13 +21,14 @@ function InfoTH() {
       <div>
         <img src="/images/ODOS Website_Detail_Section 1.jpg" alt="" />
       </div>
+      {/* รายละเอียด */}
       <div>
         <div className="id= คุณสมบัติ">
-          <div className="h-screen flex flex-col  px-6">
+          <div className="h-screen flex flex-col  ">
             <br></br>
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">คุณสมบัติของผู้สมัครเข้าร่วมโครงการ</h1>
-            <p>ณ วันที่ 24 มีนาคม 2568 ผู้สมัครต้องมีคุณสมบัติ ดังต่อไปนี้</p>
-            <ul className="คุณสมบัติ">
+            <p className="px-4">ณ วันที่ 24 มีนาคม 2568 ผู้สมัครต้องมีคุณสมบัติ ดังต่อไปนี้</p>
+            <ul className="คุณสมบัติ px-6">
               <li><label htmlFor="#">1.1	มีสัญชาติไทย</label></li>
               <li><label htmlFor="#">1.2	อายุไม่เกิน 19 ปี</label></li>
               <li><label htmlFor="#">1.3	มีที่อยู่ตามทะเบียนบ้านอยู่ในอำเภอใดอำเภอหนึ่งของประเทศไทย ต่อเนื่องเป็นระยะเวลาไม่น้อยกว่า 1 ปี กรณีย้ายที่อยู่ไม่ถึง 1 ปี ให้ยึดที่อยู่เดิมก่อนหน้าที่อาศัยต่อเนื่องเป็นระยะเวลาไม่น้อยกว่า 1 ปี </label></li>
@@ -39,7 +41,7 @@ function InfoTH() {
             </ul>
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">เอกสารประกอบการพิจารณาคัดเลือกผู้สมัครเข้าร่วมโครงการ</h1>
-            <ul className="เอกสาร">
+            <ul className="เอกสาร px-6">
               <li><label htmlFor="">2.1	รูปถ่ายหน้าตรง ไม่สวมหมวก ไม่สวมแว่นตา พื้นหลังไม่มีลวดลาย ถ่ายไว้ไม่เกิน 1 ปีนับถึงวันเปิดรับสมัคร</label></li>
               <li><label htmlFor="">2.2	สำเนาบัตรประชาชนและทะเบียนบ้านของผู้สมัคร</label></li>
               <li><label htmlFor="">2.3	สำเนาบัตรประชาชนและทะเบียนบ้านของบิดามารดา หรือผู้ปกครองที่ให้การอุปการะเลี้ยงดู </label></li>
@@ -54,7 +56,7 @@ function InfoTH() {
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">หลักเกณฑ์การพิจารณา</h1>
 
-            <ul className="หลักเกณฑ์">
+            {/* <ul className="หลักเกณฑ์">
               <li><label htmlFor="">3.1	การพิจารณาสำหรับการประกาศผลรอบที่ 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; สัดส่วนคะแนน</label></li>
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;1)	คะแนนเฉลี่ยสะสม&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ร้อยละ 10</label></li>
               <li><label htmlFor="">&nbsp;&nbsp;&nbsp;2)	คะแนนเฉลี่ยสะสมวิชาภาษาอังกฤษ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ร้อยละ 20</label></li>
@@ -71,10 +73,71 @@ function InfoTH() {
               <li><label htmlFor=""></label>&nbsp;&nbsp;&nbsp;3)	การสื่อสาร &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ร้อยละ 20</li>
               <li><label htmlFor=""></label>&nbsp;&nbsp;&nbsp;4)	ความคิดเชิงวิเคราะห์&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ร้อยละ 20</li>
               <li><label htmlFor=""></label>&nbsp;&nbsp;&nbsp;5)	บุคลิกภาพ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ร้อยละ 20</li>
-            </ul>
+            </ul> */}
+
+            <div style={{ width: "80%", margin: "0px", padding: "20px", textAlign: "left" }}>
+              <ul style={{ listStyleType: "none", padding: "0", width: "100%" }}>
+                <li><label>3.1 การพิจารณาสำหรับการประกาศผลรอบที่ 1:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) คะแนนเฉลี่ยสะสม</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>10%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>2) คะแนนเฉลี่ยสะสมวิชาภาษาอังกฤษ</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>3) ประสบการณ์และความสำเร็จด้านดิจิทัล</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>30%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>4) การนำเสนอทักษะและทัศนคติผ่านสื่อวีดีโอ</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>40%</span>
+                </li>
+
+                <li><label>3.2 การพิจารณาสำหรับการประกาศผลรอบที่ 2:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) ผลสอบภาษาอังกฤษ</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>10%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>2) ผลสอบทักษะด้านดิจิทัลระดับพื้นฐาน</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+
+                <li><label>3.3 การพิจารณาสำหรับการประกาศผลรอบที่ 3:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) ผลสอบทักษะด้านดิจิทัลระดับกลาง</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>30%</span>
+                </li>
+
+                <li><label>3.4 การพิจารณาประกาศผลผู้ได้รับการคัดเลือกผ่านการสัมภาษณ์:</label></li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>1) ทัศนคติ</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>2) ปฏิภาณไหวพริบในการแก้ไขปัญหา</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>3) การสื่อสาร</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>4) ความคิดเชิงวิเคราะห์</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+                <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
+                  <span style={{ flex: "1" }}>5) บุคลิกภาพ</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                </li>
+              </ul>
+            </div>
+
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">แนวทางการคัดเลือกผู้สมัครเข้าร่วมโครงการ</h1>
-            <ul className="คัดเลือก">
+            <ul className="คัดเลือก px-6">
               <li><label htmlFor="">4.1	ผู้สมัครเข้าร่วมโครงการต้องมีคุณสมบัติครบถ้วนตามประกาศนี้ โดยคณะกรรมการฯ จะพิจารณาประกาศผลผู้ผ่านการคัดเลือกในรอบที่ 1 จากเอกสารประกอบการพิจารณาและวีดีโอแนะนำตัว</label></li>
               <li><label htmlFor="">4.2	ผู้สมัครเข้าร่วมโครงการที่ได้รับการประกาศรายชื่อเป็นผู้ผ่านการคัดเลือกในรอบที่ 1 จะต้องดำเนินการสอบภาษาอังกฤษและทักษะดิจิทัลระดับพื้นฐานผ่านแพลตฟอร์มที่คณะกรรมการฯ กำหนด โดยผู้สมัครเข้าร่วมโครงการที่ได้คะแนนสูงสุดในรอบนี้สามอันดับของแต่ละอำเภอ/เขตจะได้รับการประกาศรายชื่อเป็นผู้ผ่านการคัดเลือกในรอบที่ 2</label></li>
               <li><label htmlFor="">4.3	ผู้สมัครเข้าร่วมโครงการที่ผ่านการคัดเลือกในรอบที่ 2 จะต้องดำเนินการสอบวัดระดับทักษะดิจิทัลระดับกลางผ่านแพลตฟอร์มที่คณะกรรมการฯ กำหนด โดยผู้สมัครเข้าร่วมโครงการที่ได้คะแนนสูงสุดในรอบนี้ของแต่ละอำเภอ/เขตจะได้รับการประกาศรายชื่อเป็นผู้ผ่านการคัดเลือกในรอบที่ 3 โดยผู้สมัครเข้าร่วมโครงการที่ได้คะแนนสูงสุดในลำดับที่สองและสามจะได้รับการประกาศรายชื่อเป็นตัวแทนสำรองของอำเภอ/เขตตามลำดับ</label></li>
@@ -86,7 +149,7 @@ function InfoTH() {
             </ul>
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center "><h1 className="text-5xl font-bold mb-6 items-center text-center ">เงื่อนไขและข้อผูกพันของผู้เข้าร่วมโครงการ</h1></h1>
-            <ul className="เงื่อนไข">
+            <ul className="เงื่อนไข px-6">
               <li><label htmlFor="">5.1	ผู้เข้าร่วมโครงการจะต้องทำสัญญาเพื่อเป็นพนักงานกลุ่มเยาวชนของสำนักงานฯ ตลอดระยะเวลาโครงการ </label></li>
               <li><label htmlFor="">5.2	ผู้เข้าร่วมโครงการจะได้รับการสนับสนุนเพื่อร่วมกิจกรรมของโครงการในแต่ละประเทศ/พื้นที่ที่กำหนดโดยไม่มีค่าใช้จ่าย และจะได้รับการสนับสนุน รวมถึงค่าใช้จ่ายอื่นที่จำเป็นสำหรับการดำรงชีวิตอยู่ในต่างประเทศ</label></li>
               <li><label htmlFor="">5.3	ผู้เข้าร่วมโครงการต้องปฏิบัติตามเงื่อนไขหรือข้อผูกพันในการเข้าร่วมโครงการตามที่สำนักงานฯ กำหนดไว้เป็นการเฉพาะ</label></li>
@@ -94,7 +157,7 @@ function InfoTH() {
             </ul>
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">ข้อปฏิบัติในการเข้าร่วมโครงการ</h1>
-            <ul className="ปฎิบัติ">
+            <ul className="ปฎิบัติ px-6">
               <li><label htmlFor="">6.1	ผู้เข้าร่วมโครงการต้องปฏิบัติตนให้เหมาะสมในฐานะตัวแทนของประเทศไทย และรักษาชื่อเสียงของประเทศ</label></li>
               <li><label htmlFor="">6.2	ผู้เข้าร่วมโครงการต้องไม่แสดงความคิดเห็นหรือกระทำการใด ๆ ที่อาจก่อให้เกิดความเสียหายต่อโครงการ สำนักงานฯ หรือความสัมพันธ์ระหว่างประเทศ</label></li>
               <li><label htmlFor="">6.3	ผู้เข้าร่วมโครงการต้องเข้าร่วมกิจกรรมตลอดระยะเวลาโครงการ และปฏิบัติตามกฎระเบียบข้อบังคับของสำนักงานฯ และสถานศึกษา</label></li>
@@ -103,7 +166,7 @@ function InfoTH() {
             </ul>
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">การระงับหรือยุติสถานะผู้เข้าร่วมโครงการ</h1>
-            <ul>
+            <ul className="การระงับ px-6">
               <li><label htmlFor="">ผู้เข้าร่วมโครงการจะถูกระงับหรือยุติสถานะผู้เข้าร่วมโครงการในกรณีดังต่อไปนี้</label></li>
               <li><label htmlFor="">7.1	ได้รับการลงโทษเนื่องจากกระทำผิดกฎระเบียบของสถานศึกษาหรือกฎหมาย </label></li>
               <li><label htmlFor="">7.2	มีความประพฤติไม่เหมาะสมกับการเป็นผู้ได้รับคัดเลือกเข้าร่วมโครงการ เช่น ไม่ปฏิบัติตนอยู่ในกรอบของศีลธรรมและวัฒนธรรมอันดีงามของสังคมไทย ทั้งก่อนหรือระหว่างการเข้าร่วมโครงการ</label></li>
@@ -113,9 +176,21 @@ function InfoTH() {
               <li><label htmlFor="">7.6	พบว่าให้ข้อมูลประกอบ หลักฐานเอกสารอันเป็นเท็จ ทั้งก่อนหรือระหว่างการเข้าร่วมโครงการ</label></li>
               <li className="pl-10 px"><label htmlFor="">คณะกรรมการฯ สามารถวินิจฉัยให้ระงับหรือยุติสถานะการเข้าร่วมโครงการ และตัดสิทธิ การเข้าร่วมโครงการในปีต่อ ๆ ไปได้</label></li>
             </ul>
+            <br />
+            <div className="flex flex-col">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
+
+
+      {/* บังคับให้รูปไปอยู่ล่างสุด */}
+      {/* <div className="mt-auto">
+        <img src="/images/Partner.jpg" alt="" />
+      </div> */}
+
+      {/* <Footer /> */}
 
     </div>
 

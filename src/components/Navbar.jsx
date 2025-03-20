@@ -43,9 +43,9 @@ function Navbar({ hideLanguageTranslator }) {
             <Link to="/Maintenance">News</Link>
           </div>
           <div className="pr-10">
-            <Link to='/'>EN</Link>
+            <Link to='/EN'>EN</Link>
             <span> | </span>
-            <Link to='/TH'>TH</Link>
+            <Link to='/'>TH</Link>
           </div>
         </div>
 

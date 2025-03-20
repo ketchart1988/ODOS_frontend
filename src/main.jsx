@@ -20,8 +20,9 @@ root.render(
       <Routes>
         {/* เส้นทางหน้าแรก */}
         {/* <Route path="/" element={<Maintenance />} /> */}
-        <Route path="/" element={<App />} />
-        <Route path="/TH" element={<TH />} />
+        <Route path="/EN" element={<App />} />
+        
+        <Route path="/" element={<TH />} />
 
         {/* เส้นทางหน้า list */}
         <Route path="/list" element={<List />} />

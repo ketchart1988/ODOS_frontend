@@ -34,12 +34,12 @@ function TH() {
             <div>
                 <img src="/images/ParnerTH.jpg" alt="" />
             </div>
-            <div>
+            {/* <div>
                 <img src="/images/FooterTH.jpg" alt="" />
-            </div>
-            {/* <div className="flex flex-col">
-                <FooterTH />
             </div> */}
+            <div className="flex flex-col">
+                <FooterTH />
+            </div>
         </div>
     );
 }
