@@ -9,7 +9,7 @@ function Region() {
           <div className="text-lg sm:text-xl mt-2">
             <p>
               <a
-                //href="/pdf/japan.pdf"                // target="_blank"
+                // href="/pdf/japan.pdf"                // target="_blank"
                 rel="noopener noreferrer"
                  className="hover:text-[#869bd4]"
               >
@@ -72,13 +72,13 @@ function Region() {
             >
               Australia
             </a>
-            <a
+            {/* <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"
                className="hover:text-[#869bd4]"
             >
               New zealand
-            </a>
+            </a> */}
           </div>
         </div>
 

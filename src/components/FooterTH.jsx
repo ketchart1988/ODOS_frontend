@@ -10,7 +10,7 @@ function Footer() {
       />
       <div className="">
         <div className="text-[white] text-sm sm:text-xl ml-8">
-          <p className="font-bold">อีเมล contactodos@depa.or.th</p>
+          {/* <p className="font-bold">อีเมล contactodos@depa.or.th</p> */}
           <p className="font-bold">ที่อยู่</p>
           <p>234/431 อาคารสำนักงานส่งเสริมเศรษฐกิจดิจิทัล (อาคาร A)</p>
           <p>ซอยลาดพร้าว 10 ถนนลาดพร้าว แขวงจอมพล เขตจตุจักร กรุงเทพมหานคร 10900</p>

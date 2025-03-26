@@ -33,15 +33,15 @@ function NavbarTH({ hideLanguageTranslator }) {
                                 <a href="/InfoTH">Information</a>
                             </li>
                             <li>
-                                <a href="/qaTH">Q&A</a>
+                                <a href="/qa">Q&A</a>
                             </li>
 
                         </ul>
                     </div>
                     <div className="pr-3 text-[12px]">
-                        <Link to='/EN'>EN</Link>
+                        <Link to='/qa'>EN</Link>
                         <span> | </span>
-                        <Link to='/'>TH</Link>
+                        <Link to='/qaTH'>TH</Link>
                     </div>
                 </div>
 

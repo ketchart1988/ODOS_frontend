@@ -10,7 +10,7 @@ function Footer() {
       />
       <div className="">
         <div className="text-[white] text-sm sm:text-xl ml-8">
-          <p className="font-bold">Email: contactodos@depa.or.th</p>
+          {/* <p className="font-bold">Email: contactodos@depa.or.th</p> */}
           <p className="font-bold">Address</p>
           <p>234/431 Soi Ladprao 10 Ladprao Rd., Chom Phon,</p>
           <p>Chatuchak, Bangkok 10900</p>

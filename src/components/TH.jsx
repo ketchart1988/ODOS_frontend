@@ -17,14 +17,17 @@ function TH() {
                 <img src="/images/ODOS Website_Detail_Section 1.jpg" alt="" />
             </div>
             <div className="flex flex-col justify-center items-center">
-                <img src="/images/BFOpenTH.jpg" alt="" />
+                <img src="/images/odos_open_th.jpg" alt="" />
+                <Button />
+                <br />
+                <br />
                 {/* <div className="bg-[url('/images/ODOS Website_EN_BG Section 2.png')] bg-cover w-full"> */}
-                {/* <Region /> */}
+                <Region />
                 {/* </div> */}
             </div>
-            <div className="relative flex flex-col items-center">
+            {/* <div className="relative flex flex-col items-center">
                 <Button />
-            </div>
+            </div> */}
             <div className="flex flex-col">
                 <DeclarationTH />
             </div>

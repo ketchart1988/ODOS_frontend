@@ -10,7 +10,8 @@ import Maintenance from "./pages/Maintenance.jsx";
 import TH from "./components/TH.jsx";
 import Information from "./pages/Information.jsx";
 import InfoTH from "./pages/infoTH.jsx";
-
+import QaTH from "./pages/qaTH.jsx";
+import Qa from "./pages/qa.jsx"
 
 const root = createRoot(document.getElementById("root"));
 
@@ -31,6 +32,8 @@ root.render(
         {/* เส้นทางหน้า Information */}
         <Route path="/Information" element={<Information />} />
         <Route path="/infoTH" element={<InfoTH />} />
+        <Route path="/qaTH" element={<QaTH />} />
+        <Route path="/qa" element={<Qa />} />
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route
           path="/check-status"

@@ -32,14 +32,18 @@ function App() {
         <img src="/images/Section1.png" alt="" />
       </div>
       <div className="flex flex-col justify-center items-center">
-        <img src="/images/ODOS Website_EN_before 24 Mar_Section 3 - 4.png" alt="" />
+        <img src="/images/odos_open_en.png" alt="" />
+
+        <Button />
+        <br />
+        <br />
         {/* <div className="bg-[url('/images/ODOS Website_EN_BG Section 2.png')] bg-cover w-full"> */}
-          {/* <Region /> */}
+        <Region />
         {/* </div> */}
       </div>
-      <div className="relative flex flex-col items-center">
+      {/* <div className="relative flex flex-col items-center">
         <Button />
-      </div>
+      </div> */}
       <div className="flex flex-col">
         <Declaration />
       </div>

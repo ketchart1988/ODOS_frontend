@@ -11,12 +11,12 @@ function Navbar({ }) {
                     style={{ height: 100, width: 100 }}
                     className="hidden md:block"
                 />
-                <div className="flex">
+                <div className="flex font-weird">
                     <div className="flex gap-6 text-[12px] pr-4">
                         <Link to="/">Home</Link>
                         {/* <Link to="/Maintenance">About</Link> */}
                         <Link to="/Information">Information</Link>
-                        <Link to="/Maintenance">News</Link>
+                        <Link to="/qa">Q&A</Link>
                     </div>
                     <div className="text-[12px] pr-3">
                         <Link to='/Information'>EN</Link>

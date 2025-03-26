@@ -61,7 +61,7 @@ function InfoEN() {
               <li><label htmlFor="">2.1 A recent front-facing photograph without a hat or glasses, plain background, taken within the last year from the application date.</label></li>
               <li><label htmlFor="">2.2 A copy of the applicant's national ID card and house registration.</label></li>
               <li><label htmlFor="">2.3 A copy of the national ID card and house registration of the parents or legal guardian.</label></li>
-              <li><label htmlFor="">2.4 A consent letter from parents or legal guardian.</label></li>
+              <li><label htmlFor="">2.4 A consent letter from parents or legal guardian.&nbsp;&nbsp;</label><a className="underline" href="/pdf/GuardianConsentForm.pdf" >(download)</a></li>
               <li><label htmlFor="">2.5 A copy of the latest two-semester academic transcript.</label></li>
               <li><label htmlFor="">2.6 A certificate verifying student status or graduation.</label></li>
               <li><label htmlFor="">2.7 A recommendation letter on behavior from the educational institution, advisor, or homeroom teacher.</label></li>
@@ -77,24 +77,7 @@ function InfoEN() {
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
               Selection Criteria
             </h1>
-            {/* <ul className="criteria">
-              <li><label htmlFor="">3.1 Evaluation criteria for Round 1:</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;1) Cumulative GPA &nbsp;&nbsp;&nbsp;&nbsp;10%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;2) English GPA &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;3) Digital experience and achievements &nbsp;&nbsp;&nbsp;&nbsp;30%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;4) Video presentation skills and attitude &nbsp;&nbsp;&nbsp;&nbsp;40%</label></li>
-              <li><label htmlFor="">3.2 Evaluation criteria for Round 2:</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;1) English proficiency test &nbsp;&nbsp;&nbsp;&nbsp;10%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;2) Basic digital skills test &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-              <li><label htmlFor="">3.3 Evaluation criteria for Round 3:</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;1) Intermediate digital skills test &nbsp;&nbsp;&nbsp;&nbsp;30%</label></li>
-              <li><label htmlFor="">3.4 Evaluation criteria for final selection:</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;1) Attitude &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;2) Problem-solving ability &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;3) Communication skills &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;4) Analytical thinking &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-              <li><label htmlFor="">&nbsp;&nbsp;&nbsp;5) Personality &nbsp;&nbsp;&nbsp;&nbsp;20%</label></li>
-            </ul> */}
+
 
             <div style={{ width: "80%", margin: "0px", padding: "20px", textAlign: "left" }}>
               {/* <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "20px" }}>
@@ -183,7 +166,7 @@ function InfoEN() {
               </li>
               <li>
                 <label htmlFor="">
-                  4.4 Applicants who pass Round 4 must participate in a lottery-based country/region assignment process, which will take place at a date, time, and location determined by the committee.
+                  4.4 Applicants who pass Round 3 must participate in a lottery-based country/region assignment process, which will take place at a date, time, and location determined by the committee.
                 </label>
               </li>
               <li>
@@ -206,6 +189,8 @@ function InfoEN() {
                   4.8 If a tie occurs in the ranking process or in any other unforeseen circumstances, the committee will determine additional selection criteria to ensure transparency and fairness. The committee's decision will be final.
                 </label>
               </li>
+              <br/>
+              <li>&nbsp;&nbsp;&nbsp;&nbsp;<a className="underline" href="/pdf/odos_consent_form.pdf">Privacy Notice (download)</a></li>
             </ul>
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center">
