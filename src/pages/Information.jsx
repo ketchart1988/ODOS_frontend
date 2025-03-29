@@ -10,6 +10,14 @@ import Footer from "../components/Footer";
 function InfoEN() {
   return (
     <div className="LINESeed">
+
+      {/* Flag Counter */}
+      <div className="flex justify-center my-4">
+        <a href="https://info.flagcounter.com/LeL4">
+          <img src="https://s01.flagcounter.com/count2/LeL4/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" />
+        </a>
+      </div>
+
       <Navbar_info />
       <ScrollToTop />
       <div>
@@ -49,7 +57,11 @@ function InfoEN() {
               <li>
                 <label htmlFor="#">
                   1.7 Must have good behavior, verified by a recommendation letter from the educational institution, advisor, or homeroom teacher.
-                  Must be in good physical and mental health, free from diseases that hinder education or contagious diseases that interfere with work, and must not be legally incapacitated.
+                </label>
+              </li>
+              <li>
+                <label htmlFor="#">
+                  1.8 Must be in good physical and mental health, free from diseases that hinder education or contagious diseases that interfere with work, and must not be legally incapacitated.
                 </label>
               </li>
             </ul>
@@ -105,17 +117,17 @@ function InfoEN() {
                 <li><label>3.2 Evaluation criteria for Round 2:</label></li>
                 <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
                   <span style={{ flex: "1" }}>1) English proficiency test</span>
-                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>10%</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>50%</span>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
                   <span style={{ flex: "1" }}>2) Basic digital skills test</span>
-                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>50%</span>
                 </li>
 
                 <li><label>3.3 Evaluation criteria for Round 3:</label></li>
                 <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
                   <span style={{ flex: "1" }}>1) Intermediate digital skills test</span>
-                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>30%</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>100%</span>
                 </li>
 
                 <li><label>3.4 Evaluation criteria for final selection:</label></li>
@@ -189,7 +201,7 @@ function InfoEN() {
                   4.8 If a tie occurs in the ranking process or in any other unforeseen circumstances, the committee will determine additional selection criteria to ensure transparency and fairness. The committee's decision will be final.
                 </label>
               </li>
-              <br/>
+              <br />
               <li>&nbsp;&nbsp;&nbsp;&nbsp;<a className="underline" href="/pdf/odos_consent_form.pdf">Privacy Notice (download)</a></li>
             </ul>
             <br />
@@ -236,7 +248,7 @@ function InfoEN() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

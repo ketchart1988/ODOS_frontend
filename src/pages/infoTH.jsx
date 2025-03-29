@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Mammoth from "mammoth";
 import { useState, useEffect } from "react";
 // import Navbar from "./components/Navbar";
-import Navbar_info from "../components/NavbarTH";
+import Navbar_info from "../components/Nav_info";
 import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/FooterTH";
 import { Underline } from "lucide-react";
@@ -13,10 +13,15 @@ import { Underline } from "lucide-react";
 function InfoTH() {
 
   return (
-
-
-
     <div className="LINESeed">
+
+      {/* Flag Counter */}
+      <div className="flex justify-center my-4">
+        <a href="https://info.flagcounter.com/LeL4">
+          <img src="https://s01.flagcounter.com/count2/LeL4/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" />
+        </a>
+      </div>
+
       <Navbar_info />
       <ScrollToTop />
       <div>
@@ -36,9 +41,9 @@ function InfoTH() {
               <li><label htmlFor="#">1.4	เป็นนักเรียน นิสิต หรือนักศึกษา ที่ศึกษาอยู่ในสถานศึกษาภายในประเทศ ในปีการศึกษา 2567 ระดับมัธยมศึกษาตอนปลาย ประกาศนียบัตรวิชาชีพ ประกาศนียบัตรวิชาชีพชั้นสูง ชั้นปีที่ 1 หรือระดับปริญญาตรี ชั้นปีที่ 1 หรือเทียบเท่า </label></li>
               <li><label htmlFor="#">1.5	คะแนนเฉลี่ยสะสมรวม 2 ภาคการศึกษาล่าสุด ไม่ต่ำกว่า 2.50 (ในระบบการวัดผลที่คิดคะแนนให้ A=4, B=3, C=2, D=1, E หรือ F=0) หรือร้อยละ 62.5</label></li>
               <li><label htmlFor="#">1.6	คะแนนเฉลี่ยสะสมวิชาภาษาอังกฤษ 2 ภาคการศึกษาล่าสุด ไม่ต่ำกว่า 3.00 (ในระบบการวัดผลที่คิดคะแนนให้ A=4, B=3, C=2, D=1, E หรือ F=0) หรือร้อยละ 75</label></li>
-              <li><label htmlFor="#">1.7	มีความประพฤติดี โดยมีหนังสือรับรองจากสถานศึกษาหรืออาจารย์ที่ปรึกษา หรือครูประจำชั้น
-                มีสุขภาพแข็งแรงทั้งร่างกายและจิตใจ ไม่เป็นโรคอันอาจเป็นอุปสรรคต่อการศึกษา หรือเป็นโรคติดต่อที่เป็นอุปสรรคต่อการปฏิบัติงาน และไม่เป็นคนไร้ความสามารถ
-              </label></li>
+              <li><label htmlFor="#">1.7	มีความประพฤติดี โดยมีหนังสือรับรองจากสถานศึกษาหรืออาจารย์ที่ปรึกษา หรือครูประจำชั้น </label></li>
+              <li><label htmlFor="#">1.8  มีสุขภาพแข็งแรงทั้งร่างกายและจิตใจ ไม่เป็นโรคอันอาจเป็นอุปสรรคต่อการศึกษา หรือเป็นโรคติดต่อที่เป็นอุปสรรคต่อการปฏิบัติงาน และไม่เป็นคนไร้ความสามารถ </label></li>
+
             </ul>
             <br />
             <h1 className="text-5xl font-bold mb-6 items-center text-center ">เอกสารประกอบการพิจารณาคัดเลือกผู้สมัครเข้าร่วมโครงการ</h1>
@@ -82,17 +87,17 @@ function InfoTH() {
                 <li><label>3.2 การพิจารณาสำหรับการประกาศผลรอบที่ 2:</label></li>
                 <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
                   <span style={{ flex: "1" }}>1) ผลสอบภาษาอังกฤษ</span>
-                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>10%</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>50%</span>
                 </li>
                 <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
                   <span style={{ flex: "1" }}>2) ผลสอบทักษะด้านดิจิทัลระดับพื้นฐาน</span>
-                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>20%</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>50%</span>
                 </li>
 
                 <li><label>3.3 การพิจารณาสำหรับการประกาศผลรอบที่ 3:</label></li>
                 <li style={{ display: "flex", alignItems: "center", padding: "8px 0" }}>
                   <span style={{ flex: "1" }}>1) ผลสอบทักษะด้านดิจิทัลระดับกลาง</span>
-                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>30%</span>
+                  <span style={{ width: "80px", textAlign: "right", fontWeight: "bold" }}>100%</span>
                 </li>
 
                 <li><label>3.4 การพิจารณาประกาศผลผู้ได้รับการคัดเลือกผ่านการสัมภาษณ์:</label></li>
@@ -130,7 +135,7 @@ function InfoTH() {
               <li><label htmlFor="">4.6	ในกรณีมีผู้สละสิทธิหรือไม่ผ่านการคัดเลือกด้วยวิธีการสัมภาษณ์ จะให้สิทธิในการรับการคัดเลือกแก่ตัวแทนสำรองของอำเภอ/เขตตามลำดับ</label></li>
               <li><label htmlFor="">4.7	ในกรณีที่ไม่มีผู้สมัครเข้าร่วมโครงการในอำเภอ/เขตใด จะให้สิทธิในการรับการคัดเลือกแก่ตัวแทนสำรองของอำเภอ/เขตอื่น ตามลำดับคะแนนการสอบวัดระดับทักษะในข้อ 4.3</label></li>
               <li><label htmlFor="">4.8	ในกรณีที่พบว่าในกระบวนการจัดลำดับคะแนนของผู้สมัครเข้าร่วมโครงการมีคะแนนเท่ากันตั้งแต่สองคนขึ้นไป หรือกรณีอื่นใดนอกเหนือจากประกาศนี้ ให้คณะกรรมการฯ กำหนดแนวทางการคัดเลือกเพิ่มเติม เพื่อให้เกิดการพิจารณาที่โปร่งใสและเป็นธรรม และการพิจารณาของคณะกรรมการฯ ถือเป็นที่สิ้นสุด </label></li>
-              <br/>
+              <br />
               <li>&nbsp;&nbsp;&nbsp;&nbsp;<a className="underline" href="/pdf/odos_consent_form.pdf">เอกสารแจ้งการประมวลผลข้อมูลส่วนบุคคล (Privacy Notice)</a></li>
             </ul>
             <br />

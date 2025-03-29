@@ -11,22 +11,15 @@ import Declaration from "./components/Declaration";
 function App() {
   return (
     <div className="LINESeed">
+
+      {/* Flag Counter */}
+      <div className="flex justify-center my-4">
+        <a href="https://info.flagcounter.com/LeL4">
+          <img src="https://s01.flagcounter.com/count2/LeL4/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" />
+        </a>
+      </div>
+
       <Navbar />
-      {/* <header>
-        <nav className="sticky top-0 z-50 bg-[#8A9ED0] transition-colors">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-0">
-            <img
-              src="\images\Logo_Nav2.png"
-              alt=""
-              style={{ height: 100, width: 250 }}
-              className="hidden md:block"
-            />
-          </div>
-          <div>
-            <ul className="flex space-x-4"></ul>
-          </div>
-        </nav>
-      </header> */}
       <ScrollToTop />
       <div>
         <img src="/images/Section1.png" alt="" />
@@ -37,13 +30,8 @@ function App() {
         <Button />
         <br />
         <br />
-        {/* <div className="bg-[url('/images/ODOS Website_EN_BG Section 2.png')] bg-cover w-full"> */}
         <Region />
-        {/* </div> */}
       </div>
-      {/* <div className="relative flex flex-col items-center">
-        <Button />
-      </div> */}
       <div className="flex flex-col">
         <Declaration />
       </div>
@@ -53,9 +41,6 @@ function App() {
       <div>
         <img src="/images/ODOS Website_EN_Section 7 Partner.jpg" alt="" />
       </div>
-      {/* <div>
-        <img src="/images/Footer.png " alt="" />
-      </div> */}
       <div className="flex flex-col">
         <Footer />
       </div>
