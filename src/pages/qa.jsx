@@ -5,19 +5,13 @@ import { useState, useEffect } from "react";
 // import Navbar from "./components/Navbar";
 import Navbar_info from "../components/NavQA";
 import ScrollToTop from "../components/ScrollToTop";
-import Footer from "../components/FooterTH";
+
 import { Underline } from "lucide-react";
+import Footer from "../components/Footer";
 
 function Qa() {
   return (
     <div className="LINESeed">
-
-      {/* Flag Counter */}
-      <div className="flex justify-center my-4">
-        <a href="https://info.flagcounter.com/LeL4">
-          <img src="https://s01.flagcounter.com/count2/LeL4/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" />
-        </a>
-      </div>
 
       <Navbar_info />
       <ScrollToTop />
@@ -88,10 +82,15 @@ function Qa() {
               <li><label htmlFor="#">A: Submit your most recent 3 semesters: the current year's Semester 1 and 2, along with the previous year’s Semester 2.</label></li>
               <br />
             </ul>
-
+            <div className="flex flex-col"><Footer /></div>
           </div>
+          
         </div>
+        
       </div>
+
+      
+
     </div>
   );
 }
