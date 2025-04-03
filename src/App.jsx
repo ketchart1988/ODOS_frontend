@@ -17,13 +17,19 @@ function App() {
       <div>
         <img src="/images/Section1.png" alt="" />
       </div>
+      <div>
+        <img src="/images/ODOS Website_EN_Section 2_0.jpg" alt="" />
+      </div>
       <div className="flex flex-col justify-center items-center">
-        <img src="/images/odos_open_en.png" alt="" />
 
+
+        {/* <br />
+        <br /> */}
+        <Region />
+        <img src="/images/odos_open_en.png" alt="" />
         <Button />
         <br />
         <br />
-        <Region />
       </div>
       <div className="flex flex-col">
         <Declaration />

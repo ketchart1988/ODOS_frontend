@@ -20,13 +20,20 @@ function TH() {
             <div>
                 <img src="/images/ODOS Website_Detail_Section 1.jpg" alt="" />
             </div>
+            <div>
+                <img src="/images/ODOS Website_TH_20032025_Section 2_0.jpg" alt="" />
+            </div>
 
             <div className="flex flex-col justify-center items-center">
+                
+                
+                {/* <br />
+                <br /> */}
+                <Region />
                 <img src="/images/odos_open_th.jpg" alt="" />
                 <Button />
                 <br />
                 <br />
-                <Region />
             </div>
             <div className="flex flex-col">
                 <DeclarationTH />
