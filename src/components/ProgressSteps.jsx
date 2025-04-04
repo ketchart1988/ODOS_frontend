@@ -36,7 +36,7 @@ const ProgressSteps = ({ status }) => {
         "สอบทักษะด้านดิจิทัลระดับกลาง": 4,
         "ผ่านการคัดเลือกครั้งที่ 3": 5,
         "สอบสัมภาษณ์": 6,
-        "ผ่านการสอบสัมภาษณ์": 7,
+        "ผ่านสอบสัมภาษณ์": 7,
         "ไม่ผ่าน": 7,
     };
 
@@ -75,7 +75,7 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
     const circleColor =
         status === "ไม่ผ่าน"
             ? "bg-red-600 border-red-600"
-            : status === "ผ่านการสอบสัมภาษณ์"  
+            : status === "ผ่านสอบสัมภาษณ์"  
                 ? "bg-green-600 border-green-600"
                 : isActive
                 ? isCurrent && (label === "ได้รับเอกสารแล้ว" || label === "สอบทักษะภาษาอังกฤษ" || label === "สอบทักษะด้าน\nดิจิทัลระดับกลาง" || label === "สอบสัมภาษณ์")
@@ -86,7 +86,7 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
     const lineColor =
         status === "ไม่ผ่าน"
             ? "bg-red-600"
-            : status === "ผ่านการสอบสัมภาษณ์"
+            : status === "ผ่านสอบสัมภาษณ์"
                 ? "bg-green-600"
                 : index < currentStep
                     ? "bg-green-600"
