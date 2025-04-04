@@ -26,7 +26,7 @@ root.render(
         <Route path="/" element={<TH />} />
 
         {/* เส้นทางหน้า list */}
-        <Route path="/list" element={<List />} />
+        {/* <Route path="/list" element={<List />} /> */}
         {/* เส้นทางหน้า Maintenance */}
         <Route path="/Maintenance" element={<Maintenance />} />
         {/* เส้นทางหน้า Information */}

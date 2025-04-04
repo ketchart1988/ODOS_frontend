@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavbarDropDown from "./NavbarDropDown/NavbarDropDown";
 
 function NavbarTH({ hideLanguageTranslator }) {
     return (
-        <nav className="sticky top-0 z-50 bg-[#FFF200] transition-colors">
+        <nav className="sticky top-0 z-50 bg-[#FFF200] transition-colors h-[6.25rem]">
             {/* <div className="bg-[black] text-[white] text-3xl text-center place-items-center p-12">
         <p className="text-3xl">
           WE ARE COMING SOON ON <span className="text-[yellow]">1</span> MARCH
@@ -11,10 +12,10 @@ function NavbarTH({ hideLanguageTranslator }) {
         </p>
         <p className="text-sm mt-6">This website is under maintenance!</p>
       </div> */}
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-0">
+            <div className="max-w-screen-xl h-full flex flex-wrap items-center justify-between mx-auto md:px-8">
                 <img
                     src="\images\Logo ODOS and KV_Monochome_Black.png"
-                    alt=""
+                    alt="logo"
                     style={{ height: 100, width: 100 }}
                     className="hidden md:block"
                 />
@@ -24,7 +25,7 @@ function NavbarTH({ hideLanguageTranslator }) {
             {!hideLanguageTranslator && <LanguageTranslator />}
           </div>
         </div> */}
-                <div className="flex font-weird">
+                <div className="md:flex font-weird hidden">
                     <div>
                         <ul className="flex gap-6 text-[12px] pr-4">
                           <Link to="/">Home</Link>
@@ -44,6 +45,7 @@ function NavbarTH({ hideLanguageTranslator }) {
                         <Link to='/qaTH'>TH</Link>
                     </div>
                 </div>
+                <NavbarDropDown navType={"NavQA"} />
 
 
 
