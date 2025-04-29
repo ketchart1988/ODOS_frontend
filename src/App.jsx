@@ -15,7 +15,8 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <div>
-        <img src="/images/Section1.png" alt="" />
+        {/* <img src="/images/Section1.png" alt="" /> */}
+        <img src="/images/Section 1-en.jpg" alt="" />
       </div>
       <div>
         <img src="/images/ODOS Website_EN_Section 2_0.jpg" alt="" />

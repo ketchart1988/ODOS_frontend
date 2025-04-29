@@ -32,13 +32,13 @@ function Region() {
             >
               UK
             </a>
-            <a
+            {/* <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"
                className="hover:text-[#869bd4]"
             >
               Germany
-            </a>
+            </a> */}
             <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"

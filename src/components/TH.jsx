@@ -18,7 +18,8 @@ function TH() {
             <NavbarTH />
             <ScrollToTop />
             <div>
-                <img src="/images/ODOS Website_Detail_Section 1.jpg" alt="" />
+                {/* <img src="/images/ODOS Website_Detail_Section 1.jpg" alt="" /> */}
+                <img src="/images/Section 1-th.jpg" alt="" />
             </div>
             <div>
                 <img src="/images/ODOS Website_TH_20032025_Section 2_0.jpg" alt="" />

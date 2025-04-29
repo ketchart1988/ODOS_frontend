@@ -96,7 +96,7 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
         <div key={index} className="relative flex flex-col items-center min-h-[120px]">
         {/* // <div key={index} className="relative flex flex-col items-center min-h-[70px] gap-4"> */}
 
-
+            {/* circle */}
             {/* <div className={`w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full border-4 flex items-center justify-center ${circleColor}`}> */}
             <div className={`w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full border-2 flex items-center justify-center ${circleColor}`}>
 
