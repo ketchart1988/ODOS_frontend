@@ -2,7 +2,7 @@ function TimelineTH() {
     return (
       <div>
         <div className="">
-          <img src={"/images/TimelineTH.jpg"} alt="ODOS_Timeline" />
+          <img src={"/images/Section 6 Timeline TH.png"} alt="ODOS_Timeline" />
         </div>
   
         

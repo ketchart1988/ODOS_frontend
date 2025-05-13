@@ -43,7 +43,7 @@ function Qa() {
               <br />
 
               <li><label htmlFor="#" className="font-bold">Q: If I'm in my first year at university, which transcripts should I submit?</label></li>
-              <li><label htmlFor="#">A: You may submit your first semester university grades and the previous term's grades (e.g., Grade 12 Semester 2). If Semester 2 grades are released during the application period (until May 16, 2025), you can wait and submit both semesters together.</label></li>
+              <li><label htmlFor="#">A: You may submit your first semester university grades and the previous term's grades (e.g., Grade 12 Semester 2). If Semester 2 grades are released during the application period (until June 16, 2025), you can wait and submit both semesters together.</label></li>
               <br />
 
               <li><label htmlFor="#" className="font-bold">Q: If I've graduated and am waiting to continue studies, where do I get a certificate of good conduct?</label></li>

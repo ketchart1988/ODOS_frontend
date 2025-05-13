@@ -27,7 +27,7 @@ function App() {
         {/* <br />
         <br /> */}
         <Region />
-        <img src="/images/odos_open_en.png" alt="" />
+        <img src="/images/Section 3 - 4 EN.jpg" alt="" />
         <Button />
         <br />
         <br />

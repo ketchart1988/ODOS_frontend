@@ -31,7 +31,7 @@ function TH() {
                 {/* <br />
                 <br /> */}
                 <Region />
-                <img src="/images/odos_open_th.jpg" alt="" />
+                <img src="/images/Section 3 - 4 TH.jpg" alt="" />
                 <Button />
                 <br />
                 <br />

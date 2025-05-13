@@ -95,13 +95,13 @@ function Region() {
             >
               China
             </a>
-            <a
-              //href="/pdf/japan.pdf"              // target="_blank"
+            {/* <a
+              
               rel="noopener noreferrer"
                className="hover:text-[#869bd4]"
             >
               India
-            </a>
+            </a> */}
             <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"
