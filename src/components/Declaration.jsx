@@ -4,7 +4,7 @@ function Declaration() {
   return (
     <div>
       <img
-        src="/images/Dec.jpg"
+        src="/images/ODOS Website_EN_Section 5 Declaration.jpg"
         alt=""
         className="w-full h-full object-cover"
       />

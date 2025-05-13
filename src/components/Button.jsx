@@ -4,32 +4,24 @@ function Button() {
   return (
     <div>
       <img
-        src="/images/BG_2.png"
+        // src="/images/odos_open_en.png"
         alt=""
         className="w-full h-full object-cover"
       />
-   <a
-  href="#"
-  onClick={(e) => {
-    e.preventDefault();
-    const userAgent = navigator.userAgent.toLowerCase(); // แปลงเป็นตัวพิมพ์เล็กเพื่อให้ตรวจสอบง่ายขึ้น
-    let downloadUrl = "https://xn--72cst3czdd.com/"; // fallback link
-
-    if (userAgent.includes("android")) {
-      downloadUrl = "https://play.google.com/store/apps/details?id=th.or.dga.citizenportal";
-    } else if (userAgent.includes("iphone") || userAgent.includes("ipad") || userAgent.includes("ipod")) {
-      downloadUrl = "itms-apps://apps.apple.com/th/app/id1514331336";
-    } else if (userAgent.includes("huawei")) {
-      downloadUrl = "https://appgallery.huawei.com/#/app/C107688763";
-    }
-
-    window.location.href = downloadUrl;
-  }}
-  className="absolute left-1/2 transform -translate-x-1/2 bottom-6 sm:bottom-44 bg-[#879bcf] text-white rounded-lg shadow-lg px-3 py-1.5 sm:px-6 sm:py-3 text-sm sm:text-3xl"
->
-  Start your application
-</a>
-
+      {/* <a
+        href="https://xn--72cst3czdd.com/"
+        target="_blank"
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-20 bg-[#FFF200] text-white rounded-lg shadow-lg px-3 py-1.5 sm:px-6 sm:py-3 text-sm sm:text-3xl"
+      >
+        Start your application
+      </a> */}
+      <a
+        href="https://dg.th/kw6uzvdo57"
+        target="_blank"
+        className="my-2 bg-[#FFF200] text-black font-bold rounded-lg shadow-lg px-7 py-1 s  m:px-6 sm:py-2 text-base sm:text-2xl text-center"
+      >
+        Start your application
+      </a>
 
 
     </div>

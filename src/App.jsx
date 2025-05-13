@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Timeline from "./components/Timeline";
@@ -10,19 +11,26 @@ import Declaration from "./components/Declaration";
 function App() {
   return (
     <div className="LINESeed">
+
       <Navbar />
       <ScrollToTop />
       <div>
-        <img src="/images/Title.jpg" alt="" />
+        {/* <img src="/images/Section1.png" alt="" /> */}
+        <img src="/images/Section 1-en.jpg" alt="" />
+      </div>
+      <div>
+        <img src="/images/ODOS Website_EN_Section 2_0.jpg" alt="" />
       </div>
       <div className="flex flex-col justify-center items-center">
-        <img src="/images/BG_1_1.png" alt="" />
-        <div className="bg-[url('/images/BG_1_2.png')] bg-cover w-full">
-          <Region />
-        </div>
-      </div>
-      <div className="relative flex flex-col items-center">
+
+
+        {/* <br />
+        <br /> */}
+        <Region />
+        <img src="/images/odos_open_en.jpg" alt="" />
         <Button />
+        <br />
+        <br />
       </div>
       <div className="flex flex-col">
         <Declaration />
@@ -31,7 +39,7 @@ function App() {
         <Timeline />
       </div>
       <div>
-        <img src="/images/Partner.jpg" alt="" />
+        <img src="/images/ODOS Website_EN_Section 7 Partner.jpg" alt="" />
       </div>
       <div className="flex flex-col">
         <Footer />

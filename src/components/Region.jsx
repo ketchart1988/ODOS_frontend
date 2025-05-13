@@ -2,14 +2,17 @@ import React from "react";
 
 function Region() {
   return (
-    <div className="p-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-        <div className="text-center">
+    <div className="w-full h-auto p-5 bg-[url('/images/ODOS%20Website_EN_BG%20Section%202.png')] bg-cover bg-center" >
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 bg-[url('/images/ODOS Website_EN_BG Section 2.png')] bg-cover bg-center "> */}
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 bg-[url('/images/ODOS Website_EN_BG Section 2.png')] bg-cover bg-center"> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 ">
+
+        <div className="text-center" >
           <p className="text-2xl sm:text-3xl font-bold ">NORTH AMERICA</p>
           <div className="text-lg sm:text-xl mt-2">
             <p>
               <a
-                //href="/pdf/japan.pdf"                // target="_blank"
+                // href="/pdf/japan.pdf"                // target="_blank"
                 rel="noopener noreferrer"
                  className="hover:text-[#869bd4]"
               >
@@ -29,13 +32,13 @@ function Region() {
             >
               UK
             </a>
-            <a
+            {/* <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"
                className="hover:text-[#869bd4]"
             >
               Germany
-            </a>
+            </a> */}
             <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"
@@ -72,13 +75,13 @@ function Region() {
             >
               Australia
             </a>
-            <a
+            {/* <a
               //href="/pdf/japan.pdf"              // target="_blank"
               rel="noopener noreferrer"
                className="hover:text-[#869bd4]"
             >
               New zealand
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -97,7 +100,7 @@ function Region() {
               rel="noopener noreferrer"
                className="hover:text-[#869bd4]"
             >
-              India
+              {/* India */}
             </a>
             <a
               //href="/pdf/japan.pdf"              // target="_blank"

@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const ProgressSteps = ({ status }) => {
@@ -27,6 +28,18 @@ const ProgressSteps = ({ status }) => {
         "23 - 25 ส.ค. 68",
     ];
 
+    // const statusMap = {
+    //     "รอการพิจารณา": 0,
+    //     "ผ่านการคัดเลือกครั้งที่ 1": 1,
+    //     "สอบทักษะภาษาอังกฤษ": 2,
+    //     "ผ่านการคัดเลือกครั้งที่ 2": 3,
+    //     "สอบทักษะด้านดิจิทัลระดับกลาง": 4,
+    //     "ผ่านการคัดเลือกครั้งที่ 3": 5,
+    //     "สอบสัมภาษณ์": 6,
+    //     "ผ่านสอบสัมภาษณ์": 7,
+    //     "ไม่ผ่าน": 7,
+    // };
+
     const statusMap = {
         "รอการพิจารณา": 0,
         "ผ่านการคัดเลือกครั้งที่ 1": 1,
@@ -35,8 +48,13 @@ const ProgressSteps = ({ status }) => {
         "สอบทักษะด้านดิจิทัลระดับกลาง": 4,
         "ผ่านการคัดเลือกครั้งที่ 3": 5,
         "สอบสัมภาษณ์": 6,
-        "ผ่านการสอบสัมภาษณ์": 7,
+        "ผ่านสอบสัมภาษณ์": 7,
         "ไม่ผ่าน": 7,
+        "x": 0,
+        "เอกสารตามกำหนด คลิปตามกำหนด": 0,
+        "เอกสารตามกำหนด คลิปไม่ตามกำหนด": 0,
+        "เอกสารไม่ตามกำหนด คลิปตามกำหนด": 0,
+        "เอกสารไม่ตามกำหนด คลิปไม่ตามกำหนด": 7,
     };
 
     const currentStep = statusMap[status] || 0;
@@ -72,9 +90,10 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
     const isCurrent = index === currentStep;
 
     const circleColor =
-        status === "ไม่ผ่าน"
+        // status === "ไม่ผ่าน" 
+        status === "เอกสารไม่ตามกำหนด คลิปไม่ตามกำหนด" 
             ? "bg-red-600 border-red-600"
-            : status === "ผ่านการสอบสัมภาษณ์"  
+            : status === "ผ่านสอบสัมภาษณ์"  
                 ? "bg-green-600 border-green-600"
                 : isActive
                 ? isCurrent && (label === "ได้รับเอกสารแล้ว" || label === "สอบทักษะภาษาอังกฤษ" || label === "สอบทักษะด้าน\nดิจิทัลระดับกลาง" || label === "สอบสัมภาษณ์")
@@ -83,9 +102,10 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
                 : "bg-white border-gray-400";
 
     const lineColor =
-        status === "ไม่ผ่าน"
+        // status === "ไม่ผ่าน"
+        status === "เอกสารไม่ตามกำหนด คลิปไม่ตามกำหนด"
             ? "bg-red-600"
-            : status === "ผ่านการสอบสัมภาษณ์"
+            : status === "ผ่านสอบสัมภาษณ์"
                 ? "bg-green-600"
                 : index < currentStep
                     ? "bg-green-600"
@@ -95,7 +115,7 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
         <div key={index} className="relative flex flex-col items-center min-h-[120px]">
         {/* // <div key={index} className="relative flex flex-col items-center min-h-[70px] gap-4"> */}
 
-
+            {/* circle */}
             {/* <div className={`w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full border-4 flex items-center justify-center ${circleColor}`}> */}
             <div className={`w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full border-2 flex items-center justify-center ${circleColor}`}>
 

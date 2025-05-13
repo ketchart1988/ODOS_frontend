@@ -1,3 +1,4 @@
+
 import { useEffect, useState, useRef } from "react";
 
 const Captcha = ({ children }) => {
@@ -103,15 +104,37 @@ const Captcha = ({ children }) => {
       <div className="flex justify-center items-center h-screen">
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-6">
           <h2 className="text-xl font-sukhumvit text-center">
-            กรุณาผ่าน CAPTCHA ก่อนเข้าเว็บไซต์
+            {/* กรุณาผ่าน CAPTCHA ก่อนเข้าเว็บไซต์ */}
           </h2>
+
+          <img
+            src="/images/Section1.png"
+            alt="Secure Access"
+            className="mx-auto w-256 h-256"
+          />
+
+          <div className="text-center text-xl font-sukhumvit font-bold">
+            <p>ระบบกำลังนำท่านเข้าสู่การตรวจสถานะการสมัคร</p>
+            <p>กรุณากด Check Box ด้านล่าง และกดปุ่มยืนยัน</p>
+          </div>
+
+
+
           <div id="turnstile-container" className="mt-4 justify-items-center"></div>
+          
+          <div className="text-center text-36px font-sukhumvit">
+            <p>หาก CAPTCHA ไม่แสดงผล</p>
+            <p>กรุณาเปลี่ยนเว็บเบราว์เซอร์เป็น Google Chrome</p> 
+            <p>หรือรีเฟรชหน้าเว็บอีกครั้ง</p>
+          </div>
+          
           <button
-            type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded-lg font-sukhumvit mt-2 ml-[2.6rem] sm:ml-[4.4rem]"
-          >
-            ยืนยัน
-          </button>
+  type="submit"
+  className="bg-blue-500 text-white py-2 px-4 rounded-lg font-sukhumvit mt-2 mx-auto block"
+>
+  ยืนยัน
+</button>
+
         </form>
       </div>
     );
