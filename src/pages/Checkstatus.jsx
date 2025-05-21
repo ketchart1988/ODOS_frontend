@@ -85,6 +85,9 @@ const Checkstatus = () => {
           <>
             <ProgressSteps status={result.Status || "รอการพิจารณา"} />
             <ResultTable result={result} />
+            <p className="mt-4 text-red-600 text-sm">
+  กรุณาตรวจสอบความถูกต้อง หากท่านพบข้อผิดพลาด กรุณาสมัครใหม่ผ่านแอพพลิเคชชั่น "ทางรัฐ" ภายในวันที่ 16 มิถุนายน 2568
+</p>
           </>
         )}
         {hasSearched && !isLoading && !result && (

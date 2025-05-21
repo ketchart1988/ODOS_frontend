@@ -62,6 +62,8 @@ const ResultTable = ({ result }) => (
       </table>
     </div>
   </div>
+  
+  
 );
 
 export default ResultTable;
