@@ -56,7 +56,7 @@ function Region() {
               <RegionButton
                 handleModal={openModal}
                 countryCode={"Finland"}
-                imageArray={[""]}
+                imageArray={["/images/finland.jpg"]}
               />
             
               <RegionButton
@@ -80,7 +80,7 @@ function Region() {
           <RegionButton
             handleModal={openModal}
             countryCode={"China"}
-            imageArray={["/images/06_China.jpg"]}
+            imageArray={["/images/06_China.jpg" , "/images/china2.jpg", "/images/china3.jpg"]}
           />
         
           <RegionButton
@@ -92,7 +92,7 @@ function Region() {
           <RegionButton
             handleModal={openModal}
             countryCode={"Korea"}
-            imageArray={[""]}
+            imageArray={["/images/korea.jpg"]}
           />
         
           <RegionButton
