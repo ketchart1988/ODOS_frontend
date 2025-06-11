@@ -15,8 +15,8 @@ function Navbar({ }) {
                     <div className="flex gap-6 text-[12px] pr-4">
                         <Link to="/">Home</Link>
                         {/* <Link to="/Maintenance">About</Link> */}
-                        <Link to="/Information">Information</Link>
-                        <Link to="/qa">Q&A</Link>
+                        <Link to="/InfoTH">Information</Link>
+                        <Link to="/QaTH">Q&A</Link>
                         <Link to="/Dashboard">Dashboard</Link>
                     </div>
                     <div className="text-[12px] pr-3">

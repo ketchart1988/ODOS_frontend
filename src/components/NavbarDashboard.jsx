@@ -20,8 +20,8 @@ function NavbarDashboard({ hideLanguageTranslator }) {
           <div className="flex gap-6 text-[12px] pr-4">
             <Link to="/">Home</Link>
             {/* <Link to="/Maintenance">About</Link> */}
-            <Link to="/Information">Information</Link>
-            <Link to="/qa">Q&A</Link>
+            <Link to="/InfoTH">Information</Link>
+            <Link to="/qaTH">Q&A</Link>
             <Link to="/Dashboard">Dashboard</Link>
             
           </div>

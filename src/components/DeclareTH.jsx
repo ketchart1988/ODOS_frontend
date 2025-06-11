@@ -4,7 +4,7 @@ function DeclarationTH() {
   return (
     <div>
       <img
-        src="/images/DeclareTH.jpg"
+        src="/images/DeclarationTH.jpg"
         alt=""
         className="w-full h-full object-cover"
       />

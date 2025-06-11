@@ -7,7 +7,7 @@ import Captcha from "./pages/Captcha.jsx";
 import List from "./pages/List.jsx";
 import "./index.css";
 import Maintenance from "./pages/Maintenance.jsx";
-import TH from "./components/TH.jsx";
+import TH from "./pages/TH.jsx";
 import Information from "./pages/Information.jsx";
 import InfoTH from "./pages/infoTH.jsx";
 import QaTH from "./pages/qaTH.jsx";
