@@ -22,7 +22,7 @@ function Navbar({ hideLanguageTranslator }) {
             {/* <Link to="/Maintenance">About</Link> */}
             <Link to="/Information">Information</Link>
             <Link to="/qa">Q&A</Link>
-            <Link to="/Dashboard">Dashboard</Link>
+            {/* <Link to="/Dashboard">Dashboard</Link> */}
             
           </div>
           <div className="pr-3 text-[12px]">

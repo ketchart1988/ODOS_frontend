@@ -35,7 +35,7 @@ root.render(
         <Route path="/infoTH" element={<InfoTH />} />
         <Route path="/qaTH" element={<QaTH />} />
         <Route path="/qa" element={<Qa />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
 
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route
