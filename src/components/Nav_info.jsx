@@ -17,7 +17,7 @@ function Navbar({ }) {
                         {/* <Link to="/Maintenance">About</Link> */}
                         <Link to="/InfoTH">Information</Link>
                         <Link to="/QaTH">Q&A</Link>
-                        {/* <Link to="/Dashboard">Dashboard</Link> */}
+                        <Link to="/Dashboard">Dashboard</Link>
                     </div>
                     <div className="text-[12px] pr-3">
                         <Link to='/Information'>EN</Link>

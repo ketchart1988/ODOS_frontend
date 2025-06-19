@@ -35,9 +35,9 @@ function NavbarTH({ hideLanguageTranslator }) {
               <li>
                 <a href="/qaTH">Q&A</a>
               </li>
-              {/* <li>
+              <li>
                 <a href="/Dashboard">Dashboard</a>
-              </li> */}
+              </li>
 
             </ul>
           </div>

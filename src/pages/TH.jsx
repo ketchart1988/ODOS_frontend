@@ -31,8 +31,8 @@ function TH() {
                 {/* <br />
                 <br /> */}
                 <Region />
-                <img src="/images/Section 3 - 4 TH.jpg" alt="" />
-                <Button />
+                <img src="/images/Section 3 TH.jpg" alt="" />
+                {/* <Button /> */}
                 <br />
                 <br />
             </div>
@@ -43,7 +43,7 @@ function TH() {
                 <TimelineTH />
             </div>
             <div>
-                <img src="/images/ODOS Website_TH_20032025_Section 7 Partner.jpg" alt="" />
+                <img src="/images/Partner2TH.jpg" alt="" />
             </div>
 
             <div className="flex flex-col">

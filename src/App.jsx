@@ -26,8 +26,8 @@ function App() {
         {/* <br />
         <br /> */}
         <Region />
-        <img src="/images/Section 3 - 4 EN.jpg" alt="" />
-        <Button />
+        <img src="/images/Section 3EN.jpg" alt="" />
+        {/* <Button /> */}
         <br />
         <br />
       </div>
@@ -38,7 +38,7 @@ function App() {
         <Timeline />
       </div>
       <div>
-        <img src="/images/ODOS Website_EN_Section 7 Partner.jpg" alt="" />
+        <img src="/images/Partner1EN.jpg" alt="" />
       </div>
       <div className="flex flex-col">
         <Footer />
