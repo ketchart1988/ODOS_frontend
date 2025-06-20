@@ -39,7 +39,7 @@ root.render(
 
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route
-          path="/checkstatus" // ✅ ไม่มีขีดกลาง
+          path="/check-status" // ✅ ไม่มีขีดกลาง
           element={
             <Captcha>
               <Checkstatus />

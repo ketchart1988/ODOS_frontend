@@ -88,10 +88,10 @@ if (!/^\d{10}$/.test(trimmedVerifyCode)) {
           <>
             <ProgressSteps status={result.Status || "รอการพิจารณา"} />
             <ResultTable result={result} />
-            <p className="mt-4 text-red-600 text-sm">
+            {/* <p className="mt-4 text-red-600 text-sm">
               กรุณาตรวจสอบความถูกต้อง หากท่านพบข้อผิดพลาด
               กรุณาสมัครใหม่ผ่านแอพพลิเคชชั่น "ทางรัฐ" 
-            </p>
+            </p> */}
           </>
         )}
         {hasSearched && !isLoading && !result && (
