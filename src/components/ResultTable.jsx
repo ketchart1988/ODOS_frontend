@@ -99,6 +99,8 @@ const ResultTable = ({ result }) => {
   );
   const email = getFieldValue(result, "อีเมล", "อีเมล1", "email");
   const phone = getFieldValue(result, "เบอร์โทรศัพท์", "phone");
+  const englishPass = getFieldValue(result, "englishPass", "EnglishPass");
+  const digitalPass = getFieldValue(result, "digitalPass", "DigitalPass");
 
   // ตรวจสอบว่าสถานะเป็น "ผ่าน" หรือไม่
   const isApproved = getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1";
@@ -234,14 +236,8 @@ const ResultTable = ({ result }) => {
                       <div className="flex items-center justify-center text-center">
                         <span className="text-gray-900 font-medium bg-blue-50 px-2 py-1 rounded">
                           {showEnglishCode
-                            ? result.EnglishExamCode ||
-                              result.englishExamCode ||
-                              `english66`
-                            : maskCode(
-                                result.EnglishExamCode ||
-                                  result.englishExamCode ||
-                                  `english66`
-                              )}
+                            ? englishPass || `english66`
+                            : maskCode(englishPass || `english66`)}
                         </span>
                         <button
                           onClick={toggleEnglishCode}
@@ -338,14 +334,8 @@ const ResultTable = ({ result }) => {
                       <div className="flex items-center justify-center text-center">
                         <span className="text-gray-900 font-medium bg-green-50 px-2 py-1 rounded">
                           {showDigitalCode
-                            ? result.DigitalExamCode ||
-                              result.digitalExamCode ||
-                              `digital55`
-                            : maskCode(
-                                result.DigitalExamCode ||
-                                  result.digitalExamCode ||
-                                  `digital55`
-                              )}
+                            ? digitalPass || `digital55`
+                            : maskCode(digitalPass || `digital55`)}
                         </span>
                         <button
                           onClick={toggleDigitalCode}
