@@ -33,6 +33,9 @@ function NavbarTH({ hideLanguageTranslator }) {
                 <a href="/InfoTH">Information</a>
               </li>
               <li>
+                <a href="/Checkstatus">Check Status</a>
+              </li>
+              <li>
                 <a href="/qa">Q&A</a>
               </li>
               <li>

@@ -1,4 +1,3 @@
-
 import { useState } from "react"; // ✅ ต้อง import useState
 import Navbar from "../components/Navbar";
 import SearchForm from "../components/SearchForm";
@@ -12,27 +11,30 @@ const Checkstatus = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
+  const trimmedId = searchId.trim();
+const trimmedVerifyCode = verifyCode.trim();
 
   const handleSearch = async (e) => {
     e.preventDefault();
 
-    if (!/^S\d+$/.test(searchId)) {
-      setError("กรุณากรอกรหัสผู้สมัครที่ถูกต้อง (ตัว S ตามด้วยตัวเลข)");
-      setResult(null);
-      setHasSearched(true);
-      setIsSubmitting(false);
-      setIsLoading(false);
-      return;
-    }
-    if (!/^\d{10}$/.test(verifyCode)) {
-      setError("กรุณากรอกรหัสยืนยัน 10 หลักให้ถูกต้อง");
-      setResult(null);
-      setHasSearched(true);
-      setIsSubmitting(false);
-      setIsLoading(false);
-      return;
-    }
-    
+    if (!/^S\d+$/.test(trimmedId)) {
+  setError("กรุณากรอกรหัสผู้สมัครที่ถูกต้อง (ตัว S ตามด้วยตัวเลข)");
+  setResult(null);
+  setHasSearched(true);
+  setIsSubmitting(false);
+  setIsLoading(false);
+  return;
+}
+
+if (!/^\d{10}$/.test(trimmedVerifyCode)) {
+  setError("กรุณากรอกรหัสยืนยัน 10 หลักให้ถูกต้อง");
+  setResult(null);
+  setHasSearched(true);
+  setIsSubmitting(false);
+  setIsLoading(false);
+  return;
+}
+
     // ถ้าข้อมูลถูกต้อง ค่อยเริ่มโหลด
     setIsLoading(true);
     setError("");
@@ -40,13 +42,12 @@ const Checkstatus = () => {
 
     try {
       const response = await fetch(
-        `https://odos.thaigov.go.th:3000/api/searchV?searchId=${searchId}&verifyCode=${verifyCode}` // Main Server 
+        `https://odos.thaigov.go.th:3000/api/searchV?searchId=${searchId}&verifyCode=${verifyCode}` // Main Server
         // `/api/searchV?searchId=${searchId}&verifyCode=${verifyCode}` // Myserver
       );
 
       if (!response.ok) {
         throw new Error("ไม่พบข้อมูล หรือเกิดข้อผิดพลาด");
-        
       }
 
       const data = await response.json();
@@ -80,18 +81,23 @@ const Checkstatus = () => {
           isLoading={isLoading}
         />
         {error && <p className="mt-4 text-red-600 font-sukhumvit">{error}</p>}
-        {isLoading && <p className="mt-4 text-gray-600 font-sukhumvit">กำลังโหลด...</p>}
+        {isLoading && (
+          <p className="mt-4 text-gray-600 font-sukhumvit">กำลังโหลด...</p>
+        )}
         {hasSearched && !isLoading && result && (
           <>
             <ProgressSteps status={result.Status || "รอการพิจารณา"} />
             <ResultTable result={result} />
             <p className="mt-4 text-red-600 text-sm">
-  กรุณาตรวจสอบความถูกต้อง หากท่านพบข้อผิดพลาด กรุณาสมัครใหม่ผ่านแอพพลิเคชชั่น "ทางรัฐ" ภายในวันที่ 16 มิถุนายน 2568
-</p>
+              กรุณาตรวจสอบความถูกต้อง หากท่านพบข้อผิดพลาด
+              กรุณาสมัครใหม่ผ่านแอพพลิเคชชั่น "ทางรัฐ" 
+            </p>
           </>
         )}
         {hasSearched && !isLoading && !result && (
-          <p className="mt-4 text-gray-600 font-sukhumvit">ไม่พบข้อมูลที่ตรงกัน</p>
+          <p className="mt-4 text-gray-600 font-sukhumvit">
+            ไม่พบข้อมูลที่ตรงกัน
+          </p>
         )}
       </div>
     </div>

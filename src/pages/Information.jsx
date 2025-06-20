@@ -7,6 +7,7 @@ import Navbar_info from "../components/Nav_info";
 import ScrollToTop from "../components/ScrollToTop";
 import Footer from "../components/Footer";
 
+
 function InfoEN() {
   return (
     <div className="LINESeed">

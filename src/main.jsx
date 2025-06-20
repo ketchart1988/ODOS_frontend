@@ -11,8 +11,8 @@ import TH from "./pages/TH.jsx";
 import Information from "./pages/Information.jsx";
 import InfoTH from "./pages/infoTH.jsx";
 import QaTH from "./pages/qaTH.jsx";
-import Qa from "./pages/qa.jsx"
-import Dashboard from "./pages/Dashboard.jsx"
+import Qa from "./pages/qa.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -23,7 +23,7 @@ root.render(
         {/* เส้นทางหน้าแรก */}
         {/* <Route path="/" element={<Maintenance />} /> */}
         <Route path="/EN" element={<App />} />
-        
+
         <Route path="/" element={<TH />} />
 
         {/* เส้นทางหน้า list */}
@@ -39,7 +39,7 @@ root.render(
 
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route
-          path="/check-status"
+          path="/checkstatus" // ✅ ไม่มีขีดกลาง
           element={
             <Captcha>
               <Checkstatus />

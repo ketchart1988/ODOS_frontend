@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ResultTable = ({ result }) => {
+  const [showEnglishCode, setShowEnglishCode] = useState(false);
+  const [showDigitalCode, setShowDigitalCode] = useState(false);
+
   if (!result) return null;
 
-  // Debug: แสดงข้อมูลที่ได้รับ
-  // console.log('ResultTable received data:', result);
-  // console.log('Available fields:', Object.keys(result));
+  
 
   // ฟังก์ชันแปลงสถานะเป็นภาษาไทย
   const getStatusText = (status) => {
@@ -60,6 +61,20 @@ const ResultTable = ({ result }) => {
 
   // ตรวจสอบว่าสถานะเป็น "ผ่าน" หรือไม่
   const isApproved = getStatusText(status) === 'ผ่าน';
+
+  // ฟังก์ชันสำหรับแสดง/ซ่อนรหัสเข้าสอบ
+  const toggleEnglishCode = () => {
+    setShowEnglishCode(!showEnglishCode);
+  };
+
+  const toggleDigitalCode = () => {
+    setShowDigitalCode(!showDigitalCode);
+  };
+
+  // ฟังก์ชันซ่อนรหัสเป็นจุด
+  const maskCode = (code) => {
+    return code ? '•'.repeat(code.length) : '••••';
+  };
 
   return (
     <div className="mt-8 space-y-8">
@@ -147,9 +162,18 @@ const ResultTable = ({ result }) => {
                     <td className="px-4 py-3 text-sm">
                       <div className="flex items-center">
                         <span className="text-gray-900 font-medium bg-blue-50 px-2 py-1 rounded">
-                          {result.EnglishExamCode || result.englishExamCode || `eng${applicantId?.slice(-4) || '0000'}`}
+                          {showEnglishCode 
+                            ? (result.EnglishExamCode || result.englishExamCode || `eng${applicantId?.slice(-4) || '0000'}`)
+                            : maskCode(result.EnglishExamCode || result.englishExamCode || `eng${applicantId?.slice(-4) || '0000'}`)
+                          }
                         </span>
-                        <span className="ml-2 text-gray-500">👁️</span>
+                        <button 
+                          onClick={toggleEnglishCode}
+                          className="ml-2 text-gray-500 hover:text-gray-700 cursor-pointer transition-colors duration-200"
+                          title={showEnglishCode ? 'ซ่อนรหัส' : 'แสดงรหัส'}
+                        >
+                          {showEnglishCode ? '🙈' : '👁️'}
+                        </button>
                       </div>
                     </td>
                     <td className="px-4 py-3 text-sm text-gray-900">
@@ -164,7 +188,7 @@ const ResultTable = ({ result }) => {
                           เข้าสอบ
                         </LinkButton>
                         <div className="text-xs text-gray-500 mt-1">
-                          <div>ระบบเปิดให้สอบออนไลน์</div>
+                          <div>ระบบเปิดให้สอบอิสระ</div>
                           <div>ระหว่าง 9.00 - 21.00</div>
                         </div>
                       </div>
@@ -196,9 +220,18 @@ const ResultTable = ({ result }) => {
                     <td className="px-4 py-3 text-sm">
                       <div className="flex items-center">
                         <span className="text-gray-900 font-medium bg-green-50 px-2 py-1 rounded">
-                          {result.DigitalExamCode || result.digitalExamCode || `dig${applicantId?.slice(-4) || '0000'}`}
+                          {showDigitalCode 
+                            ? (result.DigitalExamCode || result.digitalExamCode || `dig${applicantId?.slice(-4) || '0000'}`)
+                            : maskCode(result.DigitalExamCode || result.digitalExamCode || `dig${applicantId?.slice(-4) || '0000'}`)
+                          }
                         </span>
-                        <span className="ml-2 text-gray-500">👁️</span>
+                        <button 
+                          onClick={toggleDigitalCode}
+                          className="ml-2 text-gray-500 hover:text-gray-700 cursor-pointer transition-colors duration-200"
+                          title={showDigitalCode ? 'ซ่อนรหัส' : 'แสดงรหัส'}
+                        >
+                          {showDigitalCode ? '🙈' : '👁️'}
+                        </button>
                       </div>
                     </td>
                     <td className="px-4 py-3 text-sm text-gray-900">
@@ -213,7 +246,7 @@ const ResultTable = ({ result }) => {
                           เข้าสอบ
                         </LinkButton>
                         <div className="text-xs text-gray-500 mt-1">
-                          <div>ระบบเปิดให้สอบออนไลน์</div>
+                          <div>ระบบเปิดให้สอบอิสระ</div>
                           <div>ระหว่าง 9.00 - 21.00</div>
                         </div>
                       </div>
