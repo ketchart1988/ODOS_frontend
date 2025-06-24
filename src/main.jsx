@@ -39,13 +39,14 @@ root.render(
 
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route
-          path="/check-status" // ✅ ไม่มีขีดกลาง
-          element={
-            <Captcha>
-              <Checkstatus />
-            </Captcha>
-          }
-        />
+  path="/Checkstatus"
+  element={
+    <Captcha>
+      <Checkstatus />
+    </Captcha>
+  }
+/>
+
       </Routes>
     </Router>
   </StrictMode>

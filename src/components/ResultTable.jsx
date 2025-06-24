@@ -30,7 +30,7 @@ const ResultTable = ({ result }) => {
       target="_blank"
       rel="noopener noreferrer"
       className={`text-blue-600 hover:text-blue-800 text-sm no-underline hover:no-underline ${className}`}
-      style={{ textDecoration: 'none' }}
+      style={{ textDecoration: "none" }}
     >
       {children}
     </a>
@@ -251,23 +251,32 @@ const ResultTable = ({ result }) => {
 
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        <LinkButton href="#" className="text-blue-600">
-                          เอกสาร (PDF)
-                        </LinkButton>
-                        <div className="text-blue-600 text-sm mt-1">
-                          คลิป (VDO)
+                        <div className="mb-1">
+                          <a
+                            href="https://drive.google.com/file/d/16AcgJ9hrxMgZLK_ZX9AIUFv1xq8ubqbm/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            เอกสาร (PDF)
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://drive.google.com/file/d/1OtWEI0Eakv3Ts9kwqfJKv9pn-6HQkbMq/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            คลิป (VDO)
+                          </a>
                         </div>
                       </div>
                     </td>
+
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        <LinkButton
-                          href={
-                            result.EnglishExamLink ||
-                            result.englishExamLink ||
-                            "#"
-                          }
-                        >
+                        <LinkButton href="https://odos.globish.co.th/guest">
                           Click ทดลองสอบ
                         </LinkButton>
                       </div>
@@ -276,19 +285,30 @@ const ResultTable = ({ result }) => {
                       <div className="flex flex-col items-center justify-center space-y-2">
                         <div className="text-left space-y-1 w-full max-w-[250px]">
                           <div className="flex justify-center mb-2">
-                            <span className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium">
+                            <a
+                              href="https://odos.globish.co.th/signin"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium"
+                            >
                               Click สอบ
-                            </span>
+                            </a>
                           </div>
+
                           <div className="text-xs text-gray-500">
                             เข้าทดสอบได้ครั้งเดียวเท่านั้น
                           </div>
                           <div className="text-xs text-blue-600">
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
-                          <div className="text-xs text-blue-600">
+                          <a
+                            href="https://drive.google.com/file/d/1q_zlFGg1zlt2D4uCMQ3BELjk9j6KJ5D8/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 no-underline hover:underline"
+                          >
                             Line ID: @globish-support
-                          </div>
+                          </a>
                         </div>
                       </div>
                     </td>
@@ -384,9 +404,7 @@ const ResultTable = ({ result }) => {
                           <div className="text-xs text-blue-600">
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
-                          <div className="text-xs text-blue-600">
-                            Line ID: 
-                          </div>
+                          <div className="text-xs text-blue-600">Line ID:</div>
                         </div>
                       </div>
                     </td>
