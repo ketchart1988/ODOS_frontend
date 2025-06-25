@@ -47,11 +47,11 @@ function Region() {
                 imageArray={["/images/07_UK_Programme ODOS Summer Camp.jpg"]}
               />
           
-              <RegionButton
+              {/* <RegionButton
                 handleModal={openModal}
                 countryCode={"Sweden"}
                 imageArray={[""]}
-              />
+              /> */}
             
               <RegionButton
                 handleModal={openModal}
