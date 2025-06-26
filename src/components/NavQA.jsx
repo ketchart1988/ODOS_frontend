@@ -33,6 +33,12 @@ function NavbarTH({ hideLanguageTranslator }) {
                 <a href="/InfoTH">Information</a>
               </li>
               <li>
+<<<<<<< HEAD
+=======
+                <a href="/Checkstatus">Check Status</a>
+              </li>
+              <li>
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
                 <a href="/qa">Q&A</a>
               </li>
               <li>
@@ -68,4 +74,8 @@ function NavbarTH({ hideLanguageTranslator }) {
   );
 }
 
+<<<<<<< HEAD
 export default NavbarTH;
+=======
+export default NavbarTH;
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)

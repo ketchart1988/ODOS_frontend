@@ -21,6 +21,10 @@ function Navbar({ hideLanguageTranslator }) {
             <Link to="/">Home</Link>
             {/* <Link to="/Maintenance">About</Link> */}
             <Link to="/Information">Information</Link>
+<<<<<<< HEAD
+=======
+            <Link to="/Checkstatus">Check Status</Link>
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
             <Link to="/qa">Q&A</Link>
             <Link to="/Dashboard">Dashboard</Link>
             
@@ -37,4 +41,8 @@ function Navbar({ hideLanguageTranslator }) {
   );
 }
 
+<<<<<<< HEAD
 export default Navbar;
+=======
+export default Navbar;
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)

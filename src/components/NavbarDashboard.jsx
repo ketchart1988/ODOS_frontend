@@ -20,8 +20,14 @@ function NavbarDashboard({ hideLanguageTranslator }) {
           <div className="flex gap-6 text-[12px] pr-4">
             <Link to="/">Home</Link>
             {/* <Link to="/Maintenance">About</Link> */}
+<<<<<<< HEAD
             <Link to="/Information">Information</Link>
             <Link to="/qa">Q&A</Link>
+=======
+            <Link to="/InfoTH">Information</Link>
+            <Link to="/Checkstatus">Check Status</Link>
+            <Link to="/qaTH">Q&A</Link>
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
             <Link to="/Dashboard">Dashboard</Link>
             
           </div>
@@ -37,4 +43,8 @@ function NavbarDashboard({ hideLanguageTranslator }) {
   );
 }
 
+<<<<<<< HEAD
 export default NavbarDashboard;
+=======
+export default NavbarDashboard;
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)

@@ -13,12 +13,18 @@ function NavbarTH({ hideLanguageTranslator }) {
       </div> */}
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 sm:p-0">
         <img
+<<<<<<< HEAD
           src="\images\Logo ODOS and KV_Monochome_Black.png"
           alt=""
+=======
+          src="/images/Logo ODOS and KV_Monochome_Black.png"
+          alt="Logo ODOS"
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
           style={{ height: 100, width: 100 }}
           className="hidden md:block"
         />
 
+<<<<<<< HEAD
         {/* <div className="flex justify-end place-items-center">
           <div className="ml-4 text-[white]">
             {!hideLanguageTranslator && <LanguageTranslator />}
@@ -63,6 +69,38 @@ function NavbarTH({ hideLanguageTranslator }) {
             </Link>
           </li>
         </ul> */}
+=======
+        <div className="flex font-weird">
+          <div>
+            <ul className="flex gap-6 text-[12px] pr-4">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              {/* <li>
+                <Link to="/Maintenance">About</Link>
+              </li> */}
+              <li>
+                <Link to="/InfoTH">Information</Link>
+              </li>
+              <li>
+                <Link to="/checkstatus">Check Status</Link> {/* ✅ ใช้ lowercase เพื่อให้ตรงกับ Route */}
+              </li>
+              <li>
+                <Link to="/qaTH">Q&A</Link>
+              </li>
+              <li>
+                <Link to="/Dashboard">Dashboard</Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="pr-3 text-[12px]">
+            <Link to="/EN">EN</Link>
+            <span> | </span>
+            <Link to="/">TH</Link>
+          </div>
+        </div>
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
       </div>
     </nav>
   );

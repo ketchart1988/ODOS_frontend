@@ -31,6 +31,12 @@ const ProgressSteps = ({ status }) => {
     const statusMap = {
         "รอการพิจารณา": 0,
         "ผ่านการคัดเลือกครั้งที่ 1": 1,
+<<<<<<< HEAD
+=======
+        "ไม่ผ่านการคัดเลือกครั้งที่ 1": 1,
+        "fail": 1,
+        "pass": 1,
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
         "สอบทักษะภาษาอังกฤษ": 2,
         "ผ่านการคัดเลือกครั้งที่ 2": 3,
         "สอบทักษะด้านดิจิทัลระดับกลาง": 4,
@@ -51,20 +57,45 @@ const ProgressSteps = ({ status }) => {
         index === currentStep - 1 || index === currentStep || index === currentStep + 1
     );
 
+<<<<<<< HEAD
+=======
+    const failRoundIndex =
+        status === "ไม่ผ่านการคัดเลือกครั้งที่ 1" ? 1 : -1;
+        // status === "fail" ? 1 : -1;
+
+    const englishExamIndex = steps.findIndex(
+    (s) => s === "สอบทักษะ\nภาษาอังกฤษ และ\nและดิจิทัลพื้นฐาน"
+    );
+
+
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
     return (
         <div className="relative flex justify-center items-center mt-6 space-x-6 sm:space-x-12 lg:space-x-24 font-sukhumvit">
         {/* // <div className="relative flex justify-center items-center mt-6 space-x-6 sm:space-x-12 lg:space-x-14 font-sukhumvit">     */}
             {/* แสดงทุกสถานะใน lg ขึ้นไป */}
             {/* <div className="hidden lg:flex space-x-6 sm:space-x-12 lg:space-x-24"> */}
             <div className="hidden lg:flex space-x-6 sm:space-x-12 lg:space-x-18">
+<<<<<<< HEAD
                 {steps.map((label, index) => renderStep(label, index, currentStep, status, dates, steps))}
             </div>
+=======
+                {/* {steps.map((label, index) => renderStep(label, index, currentStep, status, dates, steps))} */}
+                {steps.map((label, index) =>
+                renderStep(label, index, currentStep, status, dates, steps, true, englishExamIndex, failRoundIndex)
+                )}
+           </div>
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
 
             {/* แสดงเฉพาะ 3 สถานะใน sm และ md */}
             <div className="flex lg:hidden space-x-6 sm:space-x-12 justify-center">
                 {visibleSteps.map((label, index) => {
                     const stepIndex = steps.indexOf(label);
+<<<<<<< HEAD
                     return renderStep(label, stepIndex, currentStep, status, dates, steps, index < visibleSteps.length - 1);
+=======
+                    // return renderStep(label, stepIndex, currentStep, status, dates, steps, index < visibleSteps.length - 1);
+                    return renderStep(label, stepIndex, currentStep, status, dates, steps, index < visibleSteps.length - 1, englishExamIndex, failRoundIndex);
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
                 })}
             </div>
 
@@ -72,11 +103,16 @@ const ProgressSteps = ({ status }) => {
     );
 };
 
+<<<<<<< HEAD
 const renderStep = (label, index, currentStep, status, dates, steps, showLine = true) => {
+=======
+const renderStep = (label, index, currentStep, status, dates, steps, showLine = true , englishExamIndex, failRoundIndex) => {
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
 
     const isActive = index <= currentStep;
     const isCurrent = index === currentStep;
 
+<<<<<<< HEAD
     const circleColor =
         status === "ไม่ผ่าน" 
         // status === "เอกสารไม่ตามกำหนด คลิปไม่ตามกำหนด" 
@@ -99,6 +135,95 @@ const renderStep = (label, index, currentStep, status, dates, steps, showLine = 
                     ? "bg-green-600"
                     : "bg-gray-300";
 
+=======
+    // ✅ เงื่อนไขพิเศษ: ถ้าสถานะเป็น "ผ่านการคัดเลือกครั้งที่ 1" ให้วงกลมของ "สอบทักษะภาษาอังกฤษ + ดิจิทัลพื้นฐาน" เป็นสีเหลือง
+    const highlightEnglishExam =
+        status === "ผ่านการคัดเลือกครั้งที่ 1" &&
+        // status === "pass" &&
+        label === "สอบทักษะ\nภาษาอังกฤษ และ\nและดิจิทัลพื้นฐาน";
+
+    const connectToYellow =
+        status === "ผ่านการคัดเลือกครั้งที่ 1" &&
+        // status === "pass" &&
+        index < englishExamIndex;   // เส้นทุกเส้นก่อน index 2 ต้องเป็นเขียว
+
+    /* 🔴 เงื่อนไขพิเศษ: ไม่ผ่านรอบ 1 → index 0-1 เป็นแดง */
+    const failRound1 = failRoundIndex === 1 && index <= 1;
+
+    // const circleColor =
+    //     status === "ไม่ผ่าน" 
+    //     // status === "เอกสารไม่ตามกำหนด คลิปไม่ตามกำหนด" 
+    //         ? "bg-red-600 border-red-600"
+    //         : status === "ผ่านสอบสัมภาษณ์"  
+    //             ? "bg-green-600 border-green-600"
+    //             : isActive
+    //             ? isCurrent && (label === "ได้รับเอกสารแล้ว" || label === "สอบทักษะภาษาอังกฤษ" || label === "สอบทักษะด้าน\nดิจิทัลระดับกลาง" || label === "สอบสัมภาษณ์")
+    //                 ? "bg-orange-500 border-orange-500"
+    //                 : "bg-green-600 border-green-600"
+    //             : "bg-white border-gray-400";
+
+    // const circleColor =
+    //     highlightEnglishExam
+    //         ? "bg-yellow-400 border-yellow-400"
+    //         : status === "ไม่ผ่าน"
+    //             ? "bg-red-600 border-red-600"
+    //             : status === "ผ่านสอบสัมภาษณ์"
+    //                 ? "bg-green-600 border-green-600"
+    //                 : isActive
+    //                     ? isCurrent && (
+    //                         label === "ได้รับเอกสารแล้ว" ||
+    //                         label === "สอบทักษะภาษาอังกฤษ" ||
+    //                         label === "สอบทักษะด้าน\nดิจิทัลระดับกลาง" ||
+    //                         label === "สอบสัมภาษณ์")
+    //                         ? "bg-orange-500 border-orange-500"
+    //                         : "bg-green-600 border-green-600"
+    //                     : "bg-white border-gray-400";
+
+    // const lineColor =
+    //     status === "ไม่ผ่าน"
+    //     // status === "เอกสารไม่ตามกำหนด คลิปไม่ตามกำหนด"
+    //         ? "bg-red-600"
+    //         : status === "ผ่านสอบสัมภาษณ์"
+    //             ? "bg-green-600"
+    //             : index < currentStep || connectToYellow
+    //             // : index < currentStep || connectToYellow
+    //                 ? "bg-green-600"
+    //                 : "bg-gray-300";
+
+    /* 🎨 กำหนดสีวงกลม */
+const circleColor =
+    failRound1
+        ? "bg-red-600 border-red-600"
+        : highlightEnglishExam
+            ? "bg-yellow-400 border-yellow-400"
+            : status === "ไม่ผ่าน"
+                ? "bg-red-600 border-red-600"
+                : status === "ผ่านสอบสัมภาษณ์"
+                    ? "bg-green-600 border-green-600"
+                    : isActive
+                        ? isCurrent && (
+                              label === "ได้รับเอกสารแล้ว" ||
+                              label === "สอบทักษะภาษาอังกฤษ" ||
+                              label === "สอบทักษะด้าน\nดิจิทัลระดับกลาง" ||
+                              label === "สอบสัมภาษณ์")
+                            ? "bg-orange-500 border-orange-500"
+                            : "bg-green-600 border-green-600"
+                        : "bg-white border-gray-400";
+
+/* 🎨 กำหนดสีเส้น */
+const lineColor =
+    (failRound1 && index < 1)        // เส้นระหว่างวง 1 ↔ 2 (ตอน fail รอบ 1)
+        ? "bg-red-600"
+        : status === "ไม่ผ่าน"
+            ? "bg-red-600"
+            : status === "ผ่านสอบสัมภาษณ์"
+                ? "bg-green-600"
+                : index < currentStep || connectToYellow
+                    ? "bg-green-600"
+                    : "bg-gray-300";
+
+
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
     return (
         <div key={index} className="relative flex flex-col items-center min-h-[120px]">
         {/* // <div key={index} className="relative flex flex-col items-center min-h-[70px] gap-4"> */}

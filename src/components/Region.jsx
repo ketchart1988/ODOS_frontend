@@ -44,7 +44,11 @@ function Region() {
               <RegionButton
                 handleModal={openModal}
                 countryCode={"UK"}
+<<<<<<< HEAD
                 imageArray={[""]}
+=======
+                imageArray={["/images/07_UK_Programme ODOS Summer Camp.jpg"]}
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
               />
           
               <RegionButton
@@ -56,7 +60,11 @@ function Region() {
               <RegionButton
                 handleModal={openModal}
                 countryCode={"Finland"}
+<<<<<<< HEAD
                 imageArray={[""]}
+=======
+                imageArray={["/images/finland.jpg"]}
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
               />
             
               <RegionButton
@@ -80,19 +88,31 @@ function Region() {
           <RegionButton
             handleModal={openModal}
             countryCode={"China"}
+<<<<<<< HEAD
             imageArray={["/images/05_China.JPG"]}
+=======
+            imageArray={["/images/06_China.jpg" , "/images/china2.jpg", "/images/china3.jpg"]}
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
           />
         
           <RegionButton
             handleModal={openModal}
             countryCode={"Japan"}
+<<<<<<< HEAD
             imageArray={["/images/02_JAP.JPG"]}
+=======
+            imageArray={["/images/02_JAP.JPG" , "/images/05_Japan Embassy_Programme ODOS Summer Camp.jpg"]}
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
           />
         
           <RegionButton
             handleModal={openModal}
             countryCode={"Korea"}
+<<<<<<< HEAD
             imageArray={[""]}
+=======
+            imageArray={["/images/korea.jpg"]}
+>>>>>>> 9fe6f56 (Initial commit for 25-06-25-the-final-destination)
           />
         
           <RegionButton
