@@ -6,15 +6,20 @@ const ResultTable = ({ result }) => {
 
   if (!result) return null;
 
+  // ฟังก์ชันรีเฟรสหน้า
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   // ฟังก์ชันแปลงสถานะเป็นภาษาไทย
   const getStatusText = (status) => {
     switch (status) {
       case "approved":
       case "ผ่านการคัดเลือกครั้งที่ 1":
-      // case "pass":
+        // case "pass":
         return "ผ่านการคัดเลือกครั้งที่ 1";
       case "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข":
-        return "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข";  
+        return "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข";
       case "rejected":
       case "ไม่ผ่าน":
       case "fail":
@@ -110,9 +115,8 @@ const ResultTable = ({ result }) => {
   // const isApproved = getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1" ;
   // const isApproved = getStatusText(status) === "pass";
   const isApproved =
-  getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1" ||
-  getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข";
-
+    getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1" ||
+    getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข";
 
   // ฟังก์ชันสำหรับแสดง/ซ่อนรหัสเข้าสอบ
   const toggleEnglishCode = () => {
@@ -130,6 +134,30 @@ const ResultTable = ({ result }) => {
 
   return (
     <div className="mt-8 space-y-8">
+      {/* ปุ่มรีเฟรส */}
+      <div className="flex justify-end mb-4">
+        <button
+          onClick={handleRefresh}
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
+          title="รีเฟรสหน้า"
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+          รีเฟรส
+        </button>
+      </div>
+
       {/* ตารางสำหรับการสมัครในบัตร */}
       <div>
         <h3 className="text-xl font-semibold text-[#1a365d] mb-4 font-sukhumvit">
@@ -175,32 +203,35 @@ const ResultTable = ({ result }) => {
                     className={`font-medium px-2 py-1 rounded-full text-xs ${
                       getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1"
                         ? "bg-green-100 text-green-800"
+                        : getStatusText(status) ===
+                          "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข"
+                        ? "bg-orange-100 text-orange-800"
                         : getStatusText(status) === "ไม่ผ่าน" ||
-                          getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข"
-                        ? "bg-yellow-100 text-yellow-800"
-                        : "bg-red-100 text-red-800"
+                          status === "ไม่ผ่านการคัดเลือกครั้งที่ 1"
+                        ? "bg-red-100 text-red-800"
+                        : "bg-yellow-100 text-yellow-800"
                     }`}
                   >
                     {getStatusText(status)}
                   </span>
 
-{/* 🔽 เพิ่มลิงก์กรอกข้อมูลเฉพาะเมื่อสถานะมีเงื่อนไข */}
-  {getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข" && (
-    <div className="mt-1">
-      <a
-        href="https://forms.office.com/pages/responsepage.aspx?id=UntPSgUOFUSEVHaJsAqHsj1k4Ghtnk5GhStQbvXFUNBUQzE1OVJUMTk3MUo2S1RXMDVLMDVORkxHUS4u&origin=lprLink&route=shorturl"  // 🔁 เปลี่ยน URL เป็นของจริง
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline text-xs font-normal"
-      >
-        คลิกเพื่อกรอกข้อมูลเพิ่มเติม
-      </a>
-      <div className="text-red-600 text-xs font-normal">
-      ภายใน 6 กรกฎาคม 2568
-    </div>
-    </div>
-  )}
-
+                  {/* 🔽 เพิ่มลิงก์กรอกข้อมูลเฉพาะเมื่อสถานะมีเงื่อนไข */}
+                  {getStatusText(status) ===
+                    "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข" && (
+                    <div className="mt-1">
+                      <a
+                        href="https://forms.office.com/r/MhsNBnwZ4S?origin=lprLink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline text-xs font-normal"
+                      >
+                        กรุณากรอกข้อมูลอีกครั้ง
+                      </a>
+                      <div className="text-xs text-gray-600 mt-1">
+                        ภายใน 4 ก.ค. 2568
+                      </div>
+                    </div>
+                  )}
                 </td>
                 <td className="px-4 py-3 text-sm text-center border-r border-gray-300">
                   {vdoLink && vdoLink !== "#" ? (
@@ -330,8 +361,7 @@ const ResultTable = ({ result }) => {
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
                           <a
-                            // href="https://drive.google.com/file/d/1q_zlFGg1zlt2D4uCMQ3BELjk9j6KJ5D8/view?usp=sharing"
-                            href="https://line.me/R/ti/p/@279cgcdf" // link goblish
+                            href="https://lin.ee/3E9p1zO"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-xs text-blue-600 no-underline hover:underline"
@@ -398,23 +428,31 @@ const ResultTable = ({ result }) => {
 
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        <LinkButton href="#" className="text-blue-600">
-                          เอกสาร (PDF)
-                        </LinkButton>
-                        <div className="text-blue-600 text-sm mt-1">
-                          คลิป (VDO)
+                        <div className="mb-1">
+                          <a
+                            href="https://drive.google.com/file/d/1ovP6uONtncblMwds4UiYZ5_mq6hdC4Gg/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            เอกสาร (PDF)
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            href="https://drive.google.com/file/d/1PmsSxiGKPruuyBILoVYbU-t3LPj1PWBi/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            คลิป (VDO)
+                          </a>
                         </div>
                       </div>
                     </td>
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        <LinkButton
-                          href={
-                            result.DigitalExamLink ||
-                            result.digitalExamLink ||
-                            "#"
-                          }
-                        >
+                        <LinkButton href="https://bit.ly/ODOSDigitalSampleTest">
                           Click ทดลองสอบ
                         </LinkButton>
                       </div>
@@ -423,9 +461,14 @@ const ResultTable = ({ result }) => {
                       <div className="flex flex-col items-center justify-center space-y-2">
                         <div className="text-left space-y-1 w-full max-w-[250px]">
                           <div className="flex justify-center mb-2">
-                            <span className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium">
+                            <a
+                              href="https://bit.ly/ODOSDigitalTest"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium"
+                            >
                               Click สอบ
-                            </span>
+                            </a>
                           </div>
                           <div className="text-xs text-gray-500">
                             เข้าทดสอบได้ครั้งเดียวเท่านั้น
@@ -433,21 +476,14 @@ const ResultTable = ({ result }) => {
                           <div className="text-xs text-blue-600">
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
-
-                          {/* <div className="text-xs text-blue-600">Line ID: ICDL Thailand</div> */}
-                        
-
                           <a
-                            // href="https://drive.google.com/file/d/1q_zlFGg1zlt2D4uCMQ3BELjk9j6KJ5D8/view?usp=sharing"
                             href="https://lin.ee/JK6lFMu"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-xs text-blue-600 no-underline hover:underline"
                           >
-                            Line ID: ICDL Thailand
+                            Line ID: @icdlbyadeptus
                           </a>
-
-
                         </div>
                       </div>
                     </td>
