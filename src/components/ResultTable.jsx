@@ -207,7 +207,8 @@ const ResultTable = ({ result }) => {
                           "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข"
                         ? "bg-orange-100 text-orange-800"
                         : getStatusText(status) === "ไม่ผ่าน" ||
-                          status === "ไม่ผ่านการคัดเลือกครั้งที่ 1"
+                          status === "ไม่ผ่านการคัดเลือกครั้งที่ 1" ||
+                          status === "ท่านสมัครซ้ำ"
                         ? "bg-red-100 text-red-800"
                         : "bg-yellow-100 text-yellow-800"
                     }`}
@@ -225,13 +226,25 @@ const ResultTable = ({ result }) => {
                         rel="noopener noreferrer"
                         className="text-blue-600 underline text-xs font-normal"
                       >
-                        กรุณากรอกข้อมูลอีกครั้ง
+                        คลิกเพื่อส่งเอกสารใหม่อีกครั้ง
                       </a>
-                      <div className="text-xs text-gray-600 mt-1">
-                        ภายใน 4 ก.ค. 2568
+                      <div className="text-xs text-red-600 mt-1">
+                        (ภายใน 4 ก.ค. 2568)
                       </div>
                     </div>
                   )}
+
+                  {/* 🔽 เพิ่มลิงก์กรอกข้อมูลเฉพาะเมื่อสถานะมีเงื่อนไข */}
+                  {getStatusText(status) ===
+                    "ท่านสมัครซ้ำ" && (
+                    <div className="mt-1">
+                      <div className="text-xs text-red-600 mt-1">
+                        ระบบพบว่าท่านสมัครซ้ำ <br />
+                        กรุณาใช้ account ที่ท่านได้จากระบบในอีเมลล่าสุด
+                      </div>
+                    </div>
+                  )}
+
                 </td>
                 <td className="px-4 py-3 text-sm text-center border-r border-gray-300">
                   {vdoLink && vdoLink !== "#" ? (
@@ -279,10 +292,10 @@ const ResultTable = ({ result }) => {
                       คู่มือการสอบ
                     </th>
                     <th className="px-3 py-3 text-center text-sm font-medium border-r border-gray-300 w-[15%]">
-                      Link ระบบทดลองสอบ
+                      ระบบทดลองสอบ
                     </th>
-                    <th className="px-3 py-3 text-center text-sm font-medium w-[25%]">
-                      Link ระบบสอบ
+                    <th className="px-3 py-3 text-center text-sm font-bold w-[25%]">
+                      ระบบสอบจริง
                     </th>
                   </tr>
                 </thead>
@@ -354,7 +367,7 @@ const ResultTable = ({ result }) => {
                             </a>
                           </div>
 
-                          <div className="text-xs text-gray-500">
+                          <div className="text-xs text-red-500">
                             เข้าทดสอบได้ครั้งเดียวเท่านั้น
                           </div>
                           <div className="text-xs text-blue-600">
@@ -397,10 +410,10 @@ const ResultTable = ({ result }) => {
                       คู่มือการสอบ
                     </th>
                     <th className="px-3 py-3 text-center text-sm font-medium border-r border-gray-300 w-[15%]">
-                      Link ระบบทดลองสอบ
+                      ระบบทดลองสอบ
                     </th>
-                    <th className="px-3 py-3 text-center text-sm font-medium w-[25%]">
-                      Link ระบบสอบ
+                    <th className="px-3 py-3 text-center text-sm font-bolds w-[25%]">
+                      ระบบสอบจริง
                     </th>
                   </tr>
                 </thead>
@@ -470,7 +483,7 @@ const ResultTable = ({ result }) => {
                               Click สอบ
                             </a>
                           </div>
-                          <div className="text-xs text-gray-500">
+                          <div className="text-xs text-red-500">
                             เข้าทดสอบได้ครั้งเดียวเท่านั้น
                           </div>
                           <div className="text-xs text-blue-600">
