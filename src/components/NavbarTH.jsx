@@ -40,6 +40,9 @@ function NavbarTH({ hideLanguageTranslator }) {
               <li>
                 <Link to="/Dashboard">Dashboard</Link>
               </li>
+              <li>
+                <Link to="/Announcement">Announcement</Link>
+              </li>
             </ul>
           </div>
 

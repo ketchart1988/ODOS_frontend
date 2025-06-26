@@ -23,6 +23,7 @@ function Nav_info() {
             <Link to="/Checkstatus">Check Status</Link>
             <Link to="/qa">Q&A</Link>
             <Link to="/Dashboard">Dashboard</Link>
+            <Link to="/Announcement">Announcement</Link>
             
           </div>
           <div className="pr-3 text-[12px]">

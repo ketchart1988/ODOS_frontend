@@ -24,6 +24,7 @@ function NavbarDashboard({ hideLanguageTranslator }) {
             <Link to="/Checkstatus">Check Status</Link>
             <Link to="/qaTH">Q&A</Link>
             <Link to="/Dashboard">Dashboard</Link>
+            <Link to="/Announcement">Announcement</Link>
             
           </div>
           <div className="pr-3 text-[12px]">

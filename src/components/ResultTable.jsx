@@ -177,8 +177,8 @@ const ResultTable = ({ result }) => {
                         ? "bg-green-100 text-green-800"
                         : getStatusText(status) === "ไม่ผ่าน" ||
                           getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข"
-                        ? "bg-red-100 text-red-800"
-                        : "bg-yellow-100 text-yellow-800"
+                        ? "bg-yellow-100 text-yellow-800"
+                        : "bg-red-100 text-red-800"
                     }`}
                   >
                     {getStatusText(status)}
@@ -188,13 +188,16 @@ const ResultTable = ({ result }) => {
   {getStatusText(status) === "ผ่านการคัดเลือกครั้งที่ 1 แบบมีเงื่อนไข" && (
     <div className="mt-1">
       <a
-        href="https://example.com/fill-missing-info"  // 🔁 เปลี่ยน URL เป็นของจริง
+        href="https://forms.office.com/pages/responsepage.aspx?id=UntPSgUOFUSEVHaJsAqHsj1k4Ghtnk5GhStQbvXFUNBUQzE1OVJUMTk3MUo2S1RXMDVLMDVORkxHUS4u&origin=lprLink&route=shorturl"  // 🔁 เปลี่ยน URL เป็นของจริง
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-600 underline text-xs font-normal"
       >
         คลิกเพื่อกรอกข้อมูลเพิ่มเติม
       </a>
+      <div className="text-red-600 text-xs font-normal">
+      ภายใน 6 กรกฎาคม 2568
+    </div>
     </div>
   )}
 
@@ -327,7 +330,8 @@ const ResultTable = ({ result }) => {
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
                           <a
-                            href="https://drive.google.com/file/d/1q_zlFGg1zlt2D4uCMQ3BELjk9j6KJ5D8/view?usp=sharing"
+                            // href="https://drive.google.com/file/d/1q_zlFGg1zlt2D4uCMQ3BELjk9j6KJ5D8/view?usp=sharing"
+                            href="https://line.me/R/ti/p/@279cgcdf" // link goblish
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-xs text-blue-600 no-underline hover:underline"
@@ -429,7 +433,21 @@ const ResultTable = ({ result }) => {
                           <div className="text-xs text-blue-600">
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
-                          <div className="text-xs text-blue-600">Line ID:</div>
+
+                          {/* <div className="text-xs text-blue-600">Line ID: ICDL Thailand</div> */}
+                        
+
+                          <a
+                            // href="https://drive.google.com/file/d/1q_zlFGg1zlt2D4uCMQ3BELjk9j6KJ5D8/view?usp=sharing"
+                            href="https://lin.ee/JK6lFMu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-blue-600 no-underline hover:underline"
+                          >
+                            Line ID: ICDL Thailand
+                          </a>
+
+
                         </div>
                       </div>
                     </td>

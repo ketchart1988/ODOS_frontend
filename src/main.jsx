@@ -13,6 +13,7 @@ import InfoTH from "./pages/infoTH.jsx";
 import QaTH from "./pages/qaTH.jsx";
 import Qa from "./pages/qa.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
+import Announcement from "./pages/Announcement.jsx";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -36,6 +37,7 @@ root.render(
         <Route path="/qaTH" element={<QaTH />} />
         <Route path="/qa" element={<Qa />} />
         <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Announcement" element={<Announcement />} />
 
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route

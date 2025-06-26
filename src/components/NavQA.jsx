@@ -41,7 +41,9 @@ function NavbarTH({ hideLanguageTranslator }) {
               <li>
                 <a href="/Dashboard">Dashboard</a>
               </li>
-
+              <li>
+                <a href="/Announcement">Announcement</a>
+              </li>
             </ul>
           </div>
           <div className="pr-3 text-[12px]">
