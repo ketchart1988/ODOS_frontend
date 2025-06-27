@@ -41,7 +41,7 @@ root.render(
 
         {/* เส้นทางที่ต้องตรวจสอบ CAPTCHA */}
         <Route
-  path="/Checkstatus"
+  path="/check-status"
   element={
     <Captcha>
       <Checkstatus />

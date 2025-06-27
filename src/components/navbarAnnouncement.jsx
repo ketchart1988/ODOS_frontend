@@ -21,7 +21,7 @@ function navbarAnnouncement({ hideLanguageTranslator }) {
             <Link to="/">Home</Link>
             {/* <Link to="/Maintenance">About</Link> */}
             <Link to="/InfoTH">Information</Link>
-            <Link to="/Checkstatus">Check Status</Link>
+            <Link to="/Check-status">Check Status</Link>
             <Link to="/qaTH">Q&A</Link>
             <Link to="/Dashboard">Dashboard</Link>
             <Link to="/Announcement">Announcement</Link>

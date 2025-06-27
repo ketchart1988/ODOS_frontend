@@ -20,7 +20,7 @@ function Nav_info() {
             <Link to="/">Home</Link>
             {/* <Link to="/Maintenance">About</Link> */}
             <Link to="/Information">Information</Link>
-            <Link to="/Checkstatus">Check Status</Link>
+            <Link to="/Check-status">Check Status</Link>
             <Link to="/qa">Q&A</Link>
             <Link to="/Dashboard">Dashboard</Link>
             <Link to="/Announcement">Announcement</Link>

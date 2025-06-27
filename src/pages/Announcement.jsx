@@ -20,7 +20,7 @@ function Announcement() {
              <br />
             <br />
             <div className="h-screen flex items-center justify-center p-10">
-                <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMGNjMWZkZjYtZjdiMi00MGZhLWJjZTAtZDA5MzJiMmI5N2UxIiwidCI6IjRhNGY3YjUyLTBlMDUtNDQxNS04NDU0LTc2ODliMDBhODdiMiIsImMiOjEwfQ%3D%3D"
+                <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMzhjNzA3NWEtZGQ3Yy00ZjU0LTgxYTItZmQ3YmQxMTBjNjI2IiwidCI6IjRhNGY3YjUyLTBlMDUtNDQxNS04NDU0LTc2ODliMDBhODdiMiIsImMiOjEwfQ%3D%3D"
                     width={1000}
                     height={660}
 

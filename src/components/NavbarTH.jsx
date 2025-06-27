@@ -32,7 +32,7 @@ function NavbarTH({ hideLanguageTranslator }) {
                 <Link to="/InfoTH">Information</Link>
               </li>
               <li>
-                <Link to="/checkstatus">Check Status</Link> {/* ✅ ใช้ lowercase เพื่อให้ตรงกับ Route */}
+                <Link to="/check-status">Check Status</Link> {/* ✅ ใช้ lowercase เพื่อให้ตรงกับ Route */}
               </li>
               <li>
                 <Link to="/qaTH">Q&A</Link>
