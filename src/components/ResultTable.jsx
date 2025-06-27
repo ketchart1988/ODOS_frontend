@@ -348,35 +348,35 @@ const ResultTable = ({ result }) => {
 
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        {/* <LinkButton href="https://odos.globish.co.th/guest">
+                        <LinkButton href="https://odos.globish.co.th/guest">
                           Click ทดลองสอบ
-                        </LinkButton> */}
-                        <div class="text-blue-600 text-center">สามารถเริ่มทดลองสอบได้</div>
-                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div>
+                        </LinkButton>
+                        {/* <div class="text-blue-600 text-center">สามารถเริ่มทดลองสอบได้</div>
+                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div> */}
                       </div>
                     </td>
                     <td className="px-3 py-3 text-sm">
                       <div className="flex flex-col items-center justify-center space-y-2">
                         <div className="text-left space-y-1 w-full max-w-[250px]">
                           <div className="flex justify-center mb-2">
-                            {/* <a
+                            <a
                               href="https://odos.globish.co.th/signin"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium"
                             >
                               Click สอบ
-                            </a> */}
+                            </a>
                             
                             
                           </div>
-                          <div class="text-blue-600 text-center">สามารถเริ่มสอบได้</div>
-                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div>
+                          {/* <div class="text-blue-600 text-center">สามารถเริ่มสอบได้</div>
+                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div> */}
 
 
 
 
-                          {/* <div className="text-xs text-red-500">
+                          <div className="text-xs text-red-500">
                             เข้าทดสอบได้ครั้งเดียวเท่านั้น
                           </div>
                           <div className="text-xs text-blue-600">
@@ -389,7 +389,7 @@ const ResultTable = ({ result }) => {
                             className="text-xs text-blue-600 no-underline hover:underline"
                           >
                             Line ID: @globish-support
-                          </a> */}
+                          </a>
                         </div>
                       </div>
                     </td>
@@ -474,33 +474,33 @@ const ResultTable = ({ result }) => {
                     </td>
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        {/* <LinkButton href="https://bit.ly/ODOSDigitalSampleTest">
+                        <LinkButton href="https://smart.icdl-thailand.com/login/index.php">
                           Click ทดลองสอบ
-                        </LinkButton> */}
-                        <div class="text-blue-600 text-center">สามารถเริ่มทดสอบได้</div>
-                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div>
+                        </LinkButton>
+                        {/* <div class="text-blue-600 text-center">สามารถเริ่มทดสอบได้</div>
+                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div> */}
                       </div>
                     </td>
                     <td className="px-3 py-3 text-sm">
                       <div className="flex flex-col items-center justify-center space-y-2">
                         <div className="text-left space-y-1 w-full max-w-[250px]">
                           <div className="flex justify-center mb-2">
-                            {/* <a
-                              href="https://bit.ly/ODOSDigitalTest"
+                            <a
+                              href="https://smart.icdl-thailand.com/login/index.php"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium"
                             >
                               Click สอบ
-                            </a> */}
+                            </a>
                           </div>
-                        <div class="text-blue-600 text-center">สามารถเริ่มสอบได้</div>
-                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div>
+                        {/* <div class="text-blue-600 text-center">สามารถเริ่มสอบได้</div>
+                        <div class="text-center">วันที่ 28 มิถุนายน 2568</div> */}
 
-                          {/* <div className="text-xs text-red-500">
+                          <div className="text-xs text-red-500">
                             เข้าทดสอบได้ครั้งเดียวเท่านั้น
-                          </div> */}
-                          {/* <div className="text-xs text-blue-600">
+                          </div>
+                          <div className="text-xs text-blue-600">
                             ช่องทางติดต่อสอบถาม/เมื่อมีปัญหาการเข้าสอบ:
                           </div>
                           <a
@@ -510,7 +510,7 @@ const ResultTable = ({ result }) => {
                             className="text-xs text-blue-600 no-underline hover:underline"
                           >
                             Line ID: @icdlbyadeptus
-                          </a> */}
+                          </a>
                         </div>
                       </div>
                     </td>
