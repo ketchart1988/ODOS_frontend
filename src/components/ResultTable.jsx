@@ -474,7 +474,7 @@ const ResultTable = ({ result }) => {
                     </td>
                     <td className="px-3 py-3 text-sm border-r border-gray-300">
                       <div className="text-center">
-                        <LinkButton href="https://smart.icdl-thailand.com/login/index.php">
+                        <LinkButton href="https://smart.icdl-thailand.com">
                           Click ทดลองสอบ
                         </LinkButton>
                         {/* <div class="text-blue-600 text-center">สามารถเริ่มทดสอบได้</div>
@@ -486,7 +486,7 @@ const ResultTable = ({ result }) => {
                         <div className="text-left space-y-1 w-full max-w-[250px]">
                           <div className="flex justify-center mb-2">
                             <a
-                              href="https://smart.icdl-thailand.com/login/index.php"
+                              href="https://smart.icdl-thailand.com"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="bg-[#00ac47] text-white px-6 py-2 rounded text-sm font-medium"

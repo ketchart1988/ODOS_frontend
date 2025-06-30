@@ -17,6 +17,48 @@ function InfoEN() {
       <div>
         <img src="/images/Section1.png" alt="" />
       </div>
+
+{/* Test Preparation Section */}
+      <div className="bg-yellow-50 p-6 border-l-4 border-yellow-400 shadow-md m-4 rounded-lg">
+        <h2 className="text-2xl font-bold text-yellow-800 mb-2">
+          Test Preparation Details
+        </h2>
+        <p className="mb-2">
+          The English Proficiency and Basic Digital Skills Assessment will be available from 28 June to 6 July 2025. You may take the test on any day and time that is convenient for you within this period. Please carefully follow all test guidelines. The system will record your video and audio during the test, and by taking the test, you consent to this recording for assessment purposes.
+        </p>
+        <p className="font-semibold">
+          Preparing for the Test and Practice Session
+        </p>
+        <p className="mb-2">
+          Before taking the test, please read the user guides for both the English and digital skills assessments carefully to understand the system and process.
+        </p>
+        <p className="mb-2">
+          To help you feel confident and prepared, you can log in to the system to try a practice test for both the English and digital skills assessments.
+        </p>
+
+        <p className="font-semibold">Checklist Before the Test</p>
+        <ul className="list-disc list-inside mb-2">
+          <li>1. Prepare a computer, laptop, tablet, or smartphone with a working camera and microphone.</li>
+          <li>2. Ensure your device is connected to a stable internet connection.</li>
+          <li>3. Enable camera and microphone access on your device during the test.</li>
+          <li>4. Find a quiet, private space where you will not be disturbed during the test.</li>
+          <li>5. Have your national ID card ready for identity verification. By taking the test, you agree to the recording of your information for this purpose.</li>
+        </ul>
+
+        <p className="font-semibold">Test Rules During the Assessment</p>
+        <p className="mb-2">
+          You must complete the test in one sitting. The timer will not pause during the test, and the system will monitor for any irregular activities through video, audio, and screen tracking throughout the assessment.
+        </p>
+        <ul className="list-disc list-inside">
+          <li>1. Dress appropriately in neat, respectful clothing.</li>
+          <li>2. Close all communication apps (e.g., Line, Facebook) on your device before starting the test.</li>
+          <li>3. Do not leave your seat until you have finished the test or the time has ended.</li>
+          <li>4. Do not use any communication devices to interact with individuals not involved in the examination.</li>
+          <li>5. Video and audio will be recorded to ensure the integrity of the test.</li>
+          <li>6. Do not open or switch to other programs during the test, as the system will detect any screen changes.</li>
+        </ul>
+      </div>
+
       <div>
         <div className="id= qualifications">
           <div className="h-screen flex flex-col">
