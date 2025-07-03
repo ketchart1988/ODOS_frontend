@@ -24,7 +24,7 @@ function InfoEN() {
           Test Preparation Details
         </h2>
         <p className="mb-2">
-          The English Proficiency and Basic Digital Skills Assessment will be available from 28 June to 6 July 2025. You may take the test on any day and time that is convenient for you within this period. Please carefully follow all test guidelines. The system will record your video and audio during the test, and by taking the test, you consent to this recording for assessment purposes.
+          The English Proficiency and Basic Digital Skills Assessment will be available from 28 June to 6 July 2025. You may take the test on any day and time that is convenient for you within this period.Please refer to the application status check system at <Link to="/check-status" style={{ fontWeight: "bold", textDecoration: "underline" }}>https://odos.thaigov.go.th/check-status </Link>  for detailed instructions on how to access and complete the assessment. Please carefully follow all test guidelines. The system will record your video and audio during the test, and by taking the test, you consent to this recording for assessment purposes.
         </p>
         <p className="font-semibold">
           Preparing for the Test and Practice Session
