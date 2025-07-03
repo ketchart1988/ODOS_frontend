@@ -43,7 +43,7 @@ function TH() {
                 <TimelineTH />
             </div>
             <div>
-                <img src="/images/Partner2TH_0.jpg" alt="" />
+                <img src="/images/Partners3TH_0.jpg" alt="" />
             </div>
 
             <div className="flex flex-col">
